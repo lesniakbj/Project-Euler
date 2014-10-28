@@ -2,7 +2,7 @@ package Problems;
 
 import ProjectEulerRunner.Problem;
 
-public class ProblemOne extends Problem 
+public class ProblemOne implements Problem 
 {
 	// Problem 1:
 	// Find the sum of all the multiples of 3 or 5 below 1000.
@@ -22,5 +22,9 @@ public class ProblemOne extends Problem
 	{
 		return true;
 	}
-
+	
+	public int getID()
+	{
+		return 1;
+	}
 }

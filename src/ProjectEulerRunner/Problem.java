@@ -1,7 +1,10 @@
 package ProjectEulerRunner;
 
-public abstract class Problem 
+public interface Problem 
 {
-	public abstract String run();	
-	public abstract boolean isCorrect();
+	public String run();
+	
+	public String getProblemDescription();
+	public boolean isCorrect();
+	public int getID();
 }

@@ -2,7 +2,7 @@ package Problems;
 
 import ProjectEulerRunner.Problem;
 
-public class ProblemFour extends Problem
+public class ProblemFour implements Problem
 {
 	// Problem 4: 
 	// A palindromic number reads the same both ways. The largest palindrome made 
@@ -34,5 +34,10 @@ public class ProblemFour extends Problem
 	public boolean isCorrect()
 	{
 		return true;
+	}
+	
+	public int getID()
+	{
+		return 4;
 	}
 }

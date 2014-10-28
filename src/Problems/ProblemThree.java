@@ -2,42 +2,48 @@ package Problems;
 
 import ProjectEulerRunner.Problem;
 
-public class ProblemThree extends Problem 
+public class ProblemThree implements Problem 
 {
 	
-	private static final long NUMBER = 600851475143l;
+	private static long NUMBER = 600851475143L;
 
 	public String run() 
 	{
-		long factor = 0;
-		for(long i = 2; i < NUMBER; i++)
+		while (true) 
 		{
-			if(isPrime(i))
-				if(i > factor)
-					factor = i;
+			long small = smallestFactor(NUMBER);
+			
+			if (small < NUMBER)
+				NUMBER /= small;
+			else
+				return "The largest prime factor of the number 600851475143: " + Long.toString(NUMBER);
 		}
-		
-		return Long.toString(factor);
 	}
 	
-	private boolean isPrime(long num)
+	private static long smallestFactor(long n) 
 	{
-		if ((num & 1) == 0) 
-			return false; // checks divisibility by 2
-		
-		for (long i=3; i*i<=num; i+=2)
+		for (long i = 2, end = (long) Math.sqrt(n); i <= end; i++) 
 		{
-			if (num % i == 0) 
-			      return false;
-			  
-	    }
+			if (n % i == 0)
+				return i;
+		}
 		
-		return true;
+		return n;
 	}
 	
 	public boolean isCorrect()
 	{
-		return false;
+		return true;
+	}
+	
+	public int getID()
+	{
+		return 3;
 	}
 
+	public String getProblemDescription()
+	{
+		return null;
+	}
+	
 }

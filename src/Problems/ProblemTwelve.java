@@ -2,7 +2,7 @@ package Problems;
 
 import ProjectEulerRunner.Problem;
 
-public class ProblemTwelve extends Problem 
+public class ProblemTwelve implements Problem 
 {
 
 	public String run() 
@@ -44,5 +44,10 @@ public class ProblemTwelve extends Problem
 	public boolean isCorrect()
 	{
 		return true;
+	}
+	
+	public int getID()
+	{
+		return 12;
 	}
 }

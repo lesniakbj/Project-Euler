@@ -3,7 +3,7 @@ package Problems;
 import ProjectEulerRunner.Problem;
 import static java.lang.Math.*;
 
-public class ProblemNine extends Problem 
+public class ProblemNine implements Problem 
 {
 	private static final int NUMBER = 1000;
 
@@ -28,5 +28,10 @@ public class ProblemNine extends Problem
 	public boolean isCorrect()
 	{
 		return true;
+	}
+	
+	public int getID()
+	{
+		return 9;
 	}
 }

@@ -3,7 +3,7 @@ package Problems;
 import ProjectEulerRunner.Problem;
 import static java.lang.Math.*;
 
-public class ProblemSix extends Problem 
+public class ProblemSix implements Problem 
 {
 	// Problem Six:
 	// Find the difference between the sum of the squares of the
@@ -42,5 +42,10 @@ public class ProblemSix extends Problem
 	public boolean isCorrect()
 	{
 		return true;
+	}
+	
+	public int getID()
+	{
+		return 6;
 	}
 }

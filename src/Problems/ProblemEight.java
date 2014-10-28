@@ -2,7 +2,7 @@ package Problems;
 
 import ProjectEulerRunner.Problem;
 
-public class ProblemEight extends Problem 
+public class ProblemEight implements Problem 
 {
 
 	private static final String NUMBER = "73167176531330624919225119674426574742355349194934" +
@@ -64,6 +64,16 @@ public class ProblemEight extends Problem
 	public boolean isCorrect()
 	{
 		return false;
+	}
+	
+	public int getID()
+	{
+		return 8;
+	}
+	
+	public String getProblemDescription()
+	{
+		return null;
 	}
 
 }

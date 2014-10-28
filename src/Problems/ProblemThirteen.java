@@ -4,7 +4,7 @@ import java.io.File;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class ProblemThirteen extends ProjectEulerRunner.Problem 
+public class ProblemThirteen implements ProjectEulerRunner.Problem 
 {
 	public String run()
 	{
@@ -53,5 +53,10 @@ public class ProblemThirteen extends ProjectEulerRunner.Problem
 	public boolean isCorrect()
 	{
 		return true;
+	}
+	
+	public int getID()
+	{
+		return 13;
 	}
 }

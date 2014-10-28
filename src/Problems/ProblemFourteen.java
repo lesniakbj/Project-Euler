@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import ProjectEulerRunner.Problem;
 
-public class ProblemFourteen extends Problem 
+public class ProblemFourteen implements Problem 
 {
 	private static final int NUMBER = 1000000;
 
@@ -47,6 +47,16 @@ public class ProblemFourteen extends Problem
 	public boolean isCorrect()
 	{
 		return false;
+	}
+	
+	public int getID()
+	{
+		return 14;
+	}
+	
+	public String getProblemDescription()
+	{
+		return null;
 	}
 	
 	/*

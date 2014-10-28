@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 import ProjectEulerRunner.Problem;
 
-public class ProblemSixteen extends Problem 
+public class ProblemSixteen implements Problem 
 {
 	public String run() 
 	{
@@ -40,6 +40,11 @@ public class ProblemSixteen extends Problem
 	public boolean isCorrect()
 	{
 		return true;
+	}
+	
+	public int getID()
+	{
+		return 16;
 	}
 
 }
