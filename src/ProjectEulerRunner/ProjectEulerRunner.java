@@ -9,6 +9,10 @@ import java.util.Scanner;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
 public class ProjectEulerRunner 
 {
 	private static final int NUM_OF_PROBLEMS = 486;
@@ -31,11 +35,11 @@ public class ProjectEulerRunner
 		UNSTARTED
 	}
 	
-	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IOException
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IOException, ParserConfigurationException, SAXException
 	{
 		populateProblemSet();
 		
-		//test(21);
+		test(1);
 		
 		out.println("Welcome to the Project Euler problem solver!");
 		out.println();
@@ -181,10 +185,11 @@ public class ProjectEulerRunner
 		}
 	}
 	
-	private static void test(int n)
+	private static void test(int n) throws ParserConfigurationException, SAXException, IOException
 	{
 		Problem runner = eulerProblems.get(n);
 		
+		out.println(runner.getProblemDescription());
 		out.println(runner.run());
 	}
 
