@@ -176,11 +176,17 @@ public class DescriptionScraper
 		for(int i = 0; i < theParts.length; i++)
 		{
 			if(theParts[i].equalsIgnoreCase("<"))
-				theParts[i] = theParts[i].replace("<", "less than");
+				theParts[i] = "less than";
 			
 			if(theParts[i].equalsIgnoreCase(">"))
-				theParts[i] = theParts[i].replace(">", "greater than");
+				theParts[i] = "greater than";
 			
+			if(theParts[i].equalsIgnoreCase("n<d"))
+				theParts[i] = "n less than d";
+			
+			if(theParts[i].equalsIgnoreCase("&"))
+				theParts[i] = "&amp;";
+				
 			int wordLength = theParts[i].length();
 			currentTotal += wordLength + 1;
 			

@@ -766,34 +766,34 @@ ratio n/φ(n) produces a minimum. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>71</ProblemID>
-		<Description>Consider the fraction, n/d, where n and d are positive integers. If n<d 
-and HCF(n,d)=1, it is called a reduced proper fraction. If we list the set of 
-reduced proper fractions for d ≤ 8 in ascending order of size, we get: 1/8, 1/7, 
-1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 
-5/6, 6/7, 7/8 It can be seen that 2/5 is the fraction immediately to the left 
-of 3/7. By listing the set of reduced proper fractions for d ≤ 1,000,000 in 
-ascending order of size, find the numerator of the fraction immediately to the left 
-of 3/7. </Description>
+		<Description>Consider the fraction, n/d, where n and d are positive integers. If 
+n less than d and HCF(n,d)=1, it is called a reduced proper fraction. If we list the set 
+of reduced proper fractions for d ≤ 8 in ascending order of size, we get: 
+1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 
+3/4, 4/5, 5/6, 6/7, 7/8 It can be seen that 2/5 is the fraction immediately to 
+the left of 3/7. By listing the set of reduced proper fractions for d ≤ 
+1,000,000 in ascending order of size, find the numerator of the fraction immediately 
+to the left of 3/7. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>72</ProblemID>
-		<Description>Consider the fraction, n/d, where n and d are positive integers. If n<d 
-and HCF(n,d)=1, it is called a reduced proper fraction. If we list the set of 
-reduced proper fractions for d ≤ 8 in ascending order of size, we get: 1/8, 1/7, 
-1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 
-5/6, 6/7, 7/8 It can be seen that there are 21 elements in this set. How many 
-elements would be contained in the set of reduced proper fractions for d ≤ 
-1,000,000? </Description>
+		<Description>Consider the fraction, n/d, where n and d are positive integers. If 
+n less than d and HCF(n,d)=1, it is called a reduced proper fraction. If we list the set 
+of reduced proper fractions for d ≤ 8 in ascending order of size, we get: 
+1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 
+3/4, 4/5, 5/6, 6/7, 7/8 It can be seen that there are 21 elements in this set. 
+How many elements would be contained in the set of reduced proper fractions 
+for d ≤ 1,000,000? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>73</ProblemID>
-		<Description>Consider the fraction, n/d, where n and d are positive integers. If n<d 
-and HCF(n,d)=1, it is called a reduced proper fraction. If we list the set of 
-reduced proper fractions for d ≤ 8 in ascending order of size, we get: 1/8, 1/7, 
-1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 
-5/6, 6/7, 7/8 It can be seen that there are 3 fractions between 1/3 and 1/2. 
-How many fractions lie between 1/3 and 1/2 in the sorted set of reduced proper 
-fractions for d ≤ 12,000? </Description>
+		<Description>Consider the fraction, n/d, where n and d are positive integers. If 
+n less than d and HCF(n,d)=1, it is called a reduced proper fraction. If we list the set 
+of reduced proper fractions for d ≤ 8 in ascending order of size, we get: 
+1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 
+3/4, 4/5, 5/6, 6/7, 7/8 It can be seen that there are 3 fractions between 1/3 
+and 1/2. How many fractions lie between 1/3 and 1/2 in the sorted set of 
+reduced proper fractions for d ≤ 12,000? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>74</ProblemID>
@@ -866,10 +866,11 @@ the first one hundred decimal digits for all the irrational square roots. </Desc
 		<ProblemID>81</ProblemID>
 		<Description>In the 5 by 5 matrix below, the minimal path sum from the top left to the 
 bottom right, by only moving to the right and down, is indicated in bold red and 
-is equal to 2427. $$ \begin{pmatrix} \color{red}{131} & 673 & 234 & 103 & 
-18\\ \color{red}{201} & \color{red}{96} & \color{red}{342} & 965 & 150\\ 630 & 
-803 & \color{red}{746} & \color{red}{422} & 111\\ 537 & 699 & 497 & 
-\color{red}{121} & 956\\ 805 & 732 & 524 & \color{red}{37} & \color{red}{331} \end{pmatrix} 
+is equal to 2427. $$ \begin{pmatrix} \color{red}{131} &amp; 673 &amp; 234 
+&amp; 103 &amp; 18\\ \color{red}{201} &amp; \color{red}{96} &amp; 
+\color{red}{342} &amp; 965 &amp; 150\\ 630 &amp; 803 &amp; \color{red}{746} &amp; 
+\color{red}{422} &amp; 111\\ 537 &amp; 699 &amp; 497 &amp; \color{red}{121} &amp; 956\\ 805 
+&amp; 732 &amp; 524 &amp; \color{red}{37} &amp; \color{red}{331} \end{pmatrix} 
 $$ Find the minimal path sum, in matrix.txt (right click and "Save 
 Link/Target As..."), a 31K text file containing a 80 by 80 matrix, from the top left 
 to the bottom right by only moving right and down. </Description>
@@ -880,26 +881,28 @@ to the bottom right by only moving right and down. </Description>
 minimal path sum in the 5 by 5 matrix below, by starting in any cell in the left 
 column and finishing in any cell in the right column, and only moving up, down, 
 and right, is indicated in red and bold; the sum is equal to 994. $$ 
-\begin{pmatrix} 131 & 673 & \color{red}{234} & \color{red}{103} & \color{red}{18}\\ 
-\color{red}{201} & \color{red}{96} & \color{red}{342} & 965 & 150\\ 630 & 803 & 746 & 422 & 
-111\\ 537 & 699 & 497 & 121 & 956\\ 805 & 732 & 524 & 37 & 331 \end{pmatrix} $$ 
-Find the minimal path sum, in matrix.txt (right click and "Save Link/Target 
-As..."), a 31K text file containing a 80 by 80 matrix, from the left column to the 
-right column. </Description>
+\begin{pmatrix} 131 &amp; 673 &amp; \color{red}{234} &amp; \color{red}{103} &amp; 
+\color{red}{18}\\ \color{red}{201} &amp; \color{red}{96} &amp; \color{red}{342} &amp; 965 
+&amp; 150\\ 630 &amp; 803 &amp; 746 &amp; 422 &amp; 111\\ 537 &amp; 699 &amp; 
+497 &amp; 121 &amp; 956\\ 805 &amp; 732 &amp; 524 &amp; 37 &amp; 331 
+\end{pmatrix} $$ Find the minimal path sum, in matrix.txt (right click and "Save 
+Link/Target As..."), a 31K text file containing a 80 by 80 matrix, from the left 
+column to the right column. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>83</ProblemID>
 		<Description>NOTE: This problem is a significantly more challenging version of Problem 
 81. In the 5 by 5 matrix below, the minimal path sum from the top left to the 
 bottom right, by moving left, right, up, and down, is indicated in bold red and 
-is equal to 2297. $$ \begin{pmatrix} \color{red}{131} & 673 & 
-\color{red}{234} & \color{red}{103} & \color{red}{18}\\ \color{red}{201} & \color{red}{96} 
-& \color{red}{342} & 965 & \color{red}{150}\\ 630 & 803 & 746 & 
-\color{red}{422} & \color{red}{111}\\ 537 & 699 & 497 & \color{red}{121} & 956\\ 805 & 732 
-& 524 & \color{red}{37} & \color{red}{331} \end{pmatrix} $$ Find the minimal 
-path sum, in matrix.txt (right click and "Save Link/Target As..."), a 31K text 
-file containing a 80 by 80 matrix, from the top left to the bottom right by 
-moving left, right, up, and down. </Description>
+is equal to 2297. $$ \begin{pmatrix} \color{red}{131} &amp; 673 &amp; 
+\color{red}{234} &amp; \color{red}{103} &amp; \color{red}{18}\\ \color{red}{201} &amp; 
+\color{red}{96} &amp; \color{red}{342} &amp; 965 &amp; \color{red}{150}\\ 630 &amp; 803 
+&amp; 746 &amp; \color{red}{422} &amp; \color{red}{111}\\ 537 &amp; 699 &amp; 
+497 &amp; \color{red}{121} &amp; 956\\ 805 &amp; 732 &amp; 524 &amp; 
+\color{red}{37} &amp; \color{red}{331} \end{pmatrix} $$ Find the minimal path sum, in 
+matrix.txt (right click and "Save Link/Target As..."), a 31K text file containing a 
+80 by 80 matrix, from the top left to the bottom right by moving left, right, 
+up, and down. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>84</ProblemID>
