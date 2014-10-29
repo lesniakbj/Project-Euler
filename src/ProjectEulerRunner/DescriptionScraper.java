@@ -175,20 +175,15 @@ public class DescriptionScraper
 		int currentTotal = 0;
 		for(int i = 0; i < theParts.length; i++)
 		{
-			if(theParts[i].equalsIgnoreCase("<"))
-				theParts[i] = "less than";
+			if(theParts[i].contains("<"))
+				theParts[i] = theParts[i].replace("<", "less than");
 			
-			if(theParts[i].equalsIgnoreCase(">"))
-				theParts[i] = "greater than";
+			if(theParts[i].contains(">"))
+				theParts[i] = theParts[i].replace("<", "greater than");
 			
-			if(theParts[i].equalsIgnoreCase("n<d"))
-				theParts[i] = "n less than d";
-			
-			if(theParts[i].equalsIgnoreCase("&"))
-				theParts[i] = "&amp;";
-			
-			if(theParts[i].contains("1<e<"))
-				theParts[i] = "1 less than e less than φ,";
+			if(theParts[i].contains("&"))
+				theParts[i] = theParts[i].replace("&", "&amp;");
+
 				
 			int wordLength = theParts[i].length();
 			currentTotal += wordLength + 1;
