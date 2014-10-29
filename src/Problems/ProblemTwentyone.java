@@ -33,12 +33,6 @@ public class ProblemTwentyone implements Problem
 	}
 
 	@Override
-	public String getProblemDescription() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public boolean isCorrect() {
 		// TODO Auto-generated method stub
 		return true;

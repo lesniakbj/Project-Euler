@@ -40,10 +40,4 @@ public class ProblemThree implements Problem
 	{
 		return 3;
 	}
-
-	public String getProblemDescription()
-	{
-		return null;
-	}
-	
 }

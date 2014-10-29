@@ -30,11 +30,6 @@ public class ProblemTwenty implements Problem
 		
 		return prod;
 	}
-	
-	public String getProblemDescription() 
-	{
-		return null;
-	}
 
 	public boolean isCorrect() 
 	{

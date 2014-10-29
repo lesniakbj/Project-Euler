@@ -54,11 +54,6 @@ public class ProblemFourteen implements Problem
 		return 14;
 	}
 	
-	public String getProblemDescription()
-	{
-		return null;
-	}
-	
 	/*
 	private static List<Integer> generateChain(int i)
 	{

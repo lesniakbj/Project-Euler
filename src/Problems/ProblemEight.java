@@ -70,10 +70,4 @@ public class ProblemEight implements Problem
 	{
 		return 8;
 	}
-	
-	public String getProblemDescription()
-	{
-		return null;
-	}
-
 }
