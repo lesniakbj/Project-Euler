@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.util.Scanner;
 import java.util.SortedMap;
@@ -18,7 +19,16 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.jsoup.*;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 
 public class DescriptionScraper 
@@ -96,6 +106,63 @@ public class DescriptionScraper
 		return theList;
 	}
 	
+	public static String getProblemDescription(int n) throws ParserConfigurationException
+	{
+		String filler = "=======================================================";
+		File descriptionFile = new File("src/ProjectEulerRunner/descriptions.xml");
+		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder docBuild = dbFactory.newDocumentBuilder();
+		
+		Document theDoc = null;
+		try {
+			theDoc = docBuild.parse(descriptionFile);
+		} catch (SAXException | IOException e) {
+			System.out.println(e.getMessage());
+			//e.printStackTrace();
+		}
+		
+		theDoc.getDocumentElement().normalize();
+		
+		NodeList allNodes = theDoc.getElementsByTagName("Problem");
+
+		for(int i = 0; i < allNodes.getLength(); i++)
+		{
+			Node theNode = allNodes.item(i);
+			
+			if(theNode.getNodeType() == Node.ELEMENT_NODE)
+			{
+				Element problemElement = (Element) theNode;
+				NodeList problemIDList = problemElement.getElementsByTagName("ProblemID");		
+				
+				Element problemIDElm = (Element) problemIDList.item(0);				
+				NodeList problemID = problemIDElm.getChildNodes();
+				
+				int id = Integer.parseInt(((Node) problemID.item(0)).getNodeValue());
+				
+				if(id == n)
+				{
+					NodeList descriptionList = problemElement.getElementsByTagName("Description");		
+					
+					Element descriptionElm = (Element)descriptionList.item(0);				
+					NodeList description = descriptionElm.getChildNodes();
+
+					Node theDescription = ((Node) description.item(0));
+					
+					if(theDescription != null)
+					{
+						String input = theDescription.getNodeValue();
+						
+						return filler + "\n" + "Problem " + id + " description: \n" + input + "\n" + filler;
+					}
+					
+				}
+				
+			}
+		}
+		
+		return "No Description Found!";
+	}
+	
 	private static int LINE_WORD_LENGTH = 0;
 	private static String cleanSingleResponse(String response)
 	{
@@ -141,7 +208,7 @@ public class DescriptionScraper
 		return theList;
 	}
 	
-	public static boolean buildDescriptionXML(SortedMap<Integer, String> descriptions) throws FileNotFoundException 
+	public static boolean buildDescriptionXML(SortedMap<Integer, String> descriptions) throws FileNotFoundException, UnsupportedEncodingException 
 	{
 		//TO-DO:
 		// If descriptions.xml exists, delete it and recreate the file
@@ -154,7 +221,7 @@ public class DescriptionScraper
 		// </ProblemDescription>
 		
 		File xmlFile = new File("src/ProjectEulerRunner/descriptions.xml");
-		PrintWriter theWriter = new PrintWriter(xmlFile);
+		PrintWriter theWriter = new PrintWriter(xmlFile, "UTF-8");
 		
 		if(xmlFile.exists())
 			xmlFile.delete();
