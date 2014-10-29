@@ -186,6 +186,9 @@ public class DescriptionScraper
 			
 			if(theParts[i].equalsIgnoreCase("&"))
 				theParts[i] = "&amp;";
+			
+			if(theParts[i].contains("1<e<"))
+				theParts[i] = "1 less than e less than φ,";
 				
 			int wordLength = theParts[i].length();
 			currentTotal += wordLength + 1;
