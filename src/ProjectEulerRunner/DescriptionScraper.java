@@ -175,8 +175,13 @@ public class DescriptionScraper
 		int currentTotal = 0;
 		for(int i = 0; i < theParts.length; i++)
 		{
-			int wordLength = theParts[i].length();
+			if(theParts[i].equalsIgnoreCase("<"))
+				theParts[i] = theParts[i].replace("<", "less than");
 			
+			if(theParts[i].equalsIgnoreCase(">"))
+				theParts[i] = theParts[i].replace(">", "greater than");
+			
+			int wordLength = theParts[i].length();
 			currentTotal += wordLength + 1;
 			
 			if(currentTotal <= LINE_WORD_LENGTH)

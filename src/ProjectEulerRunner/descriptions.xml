@@ -63,9 +63,10 @@ the value of this product? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>9</ProblemID>
-		<Description>A Pythagorean triplet is a set of three natural numbers, a < b < c, for 
-which, a2 + b2 = c2 For example, 32 + 42 = 9 + 16 = 25 = 52. There exists exactly 
-one Pythagorean triplet for which a + b + c = 1000. Find the product abc. </Description>
+		<Description>A Pythagorean triplet is a set of three natural numbers, a less than b 
+less than c, for which, a2 + b2 = c2 For example, 32 + 42 = 9 + 16 = 25 = 52. There 
+exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the 
+product abc. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>10</ProblemID>
@@ -283,7 +284,7 @@ the unit fractions with denominators 2 to 10 are given: 1/2 =  0.5 1/3 = 
 0.(3) 1/4 =  0.25 1/5 =  0.2 1/6 =  0.1(6) 1/7 =  0.(142857) 1/8 =  0.125 1/9 =  
 0.(1) 1/10 =  0.1 Where 0.1(6) means 0.166666..., and has a 1-digit recurring 
 cycle. It can be seen that 1/7 has a 6-digit recurring cycle. Find the value of d 
-< 1000 for which 1/d contains the longest recurring cycle in its decimal 
+less than 1000 for which 1/d contains the longest recurring cycle in its decimal 
 fraction part. </Description>
 	</Problem>
 	<Problem>
@@ -294,11 +295,11 @@ to 39. However, when n = 40, 402 + 40 + 41 = 40(40 + 1) + 41 is divisible by
 41, and certainly when n = 41, 41² + 41 + 41 is clearly divisible by 41. The 
 incredible formula  n² − 79n + 1601 was discovered, which produces 80 primes for the 
 consecutive values n = 0 to 79. The product of the coefficients, −79 and 1601, is 
-−126479. Considering quadratics of the form: n² + an + b, where |a| < 1000 and |b| 
-< 1000 where |n| is the modulus/absolute value of n e.g. |11| = 11 and |−4| 
-= 4 Find the product of the coefficients, a and b, for the quadratic 
-expression that produces the maximum number of primes for consecutive values of n, 
-starting with n = 0. </Description>
+−126479. Considering quadratics of the form: n² + an + b, where |a| less than 1000 
+and |b| less than 1000 where |n| is the modulus/absolute value of n e.g. |11| 
+= 11 and |−4| = 4 Find the product of the coefficients, a and b, for the 
+quadratic expression that produces the maximum number of primes for consecutive 
+values of n, starting with n = 0. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>28</ProblemID>
@@ -391,7 +392,7 @@ pandigital, 192384576. We will call 192384576 the concatenated product of 192 an
 and 5, giving the pandigital, 918273645, which is the concatenated product of 
 9 and (1,2,3,4,5). What is the largest 1 to 9 pandigital 9-digit number that 
 can be formed as the concatenated product of an integer with (1,2, ... , n) 
-where n > 1? </Description>
+where n greater than 1? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>39</ProblemID>
@@ -572,7 +573,8 @@ theoretical nature of Lychrel numbers. </Description>
 		<Description>A googol (10100) is a massive number: one followed by one-hundred zeros; 
 100100 is almost unimaginably large: one followed by two-hundred zeros. Despite 
 their size, the sum of the digits in each number is only 1. Considering natural 
-numbers of the form, ab, where a, b < 100, what is the maximum digital sum? </Description>
+numbers of the form, ab, where a, b less than 100, what is the maximum digital 
+sum? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>57</ProblemID>
@@ -759,8 +761,8 @@ are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are all less
 than nine and relatively prime to nine, φ(9)=6. The number 1 is considered to 
 be relatively prime to every positive number, so φ(1)=1. Interestingly, 
 φ(87109)=79180, and it can be seen that 87109 is a permutation of 79180. Find the value of 
-n, 1 < n < 107, for which φ(n) is a permutation of n and the ratio n/φ(n) 
-produces a minimum. </Description>
+n, 1 less than n less than 107, for which φ(n) is a permutation of n and the 
+ratio n/φ(n) produces a minimum. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>71</ProblemID>
@@ -1046,8 +1048,9 @@ brackets/parentheses, it is possible to form different positive integer targets.
 allowed. Using the set, {1, 2, 3, 4}, it is possible to obtain thirty-one different 
 target numbers of which 36 is the maximum, and each of the numbers 1 to 28 can be 
 obtained before encountering the first non-expressible number. Find the set of four 
-distinct digits, a < b < c < d, for which the longest set of consecutive positive 
-integers, 1 to n, can be obtained, giving your answer as a string: abcd. </Description>
+distinct digits, a less than b less than c less than d, for which the longest set 
+of consecutive positive integers, 1 to n, can be obtained, giving your answer 
+as a string: abcd. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>94</ProblemID>
@@ -1123,13 +1126,13 @@ be contained in the given text file. </Description>
 	<Problem>
 		<ProblemID>99</ProblemID>
 		<Description>Comparing two numbers written in index form like 211 and 37 is not 
-difficult, as any calculator would confirm that 211 = 2048 < 37 = 2187. However, 
-confirming that 632382518061 > 519432525806 would be much more difficult, as both 
-numbers contain over three million digits. Using base_exp.txt (right click and 
-'Save Link/Target As...'), a 22K text file containing one thousand lines with a 
-base/exponent pair on each line, determine which line number has the greatest numerical 
-value. NOTE: The first two lines in the file represent the numbers in the example 
-given above. </Description>
+difficult, as any calculator would confirm that 211 = 2048 less than 37 = 2187. 
+However, confirming that 632382518061 greater than 519432525806 would be much more 
+difficult, as both numbers contain over three million digits. Using base_exp.txt 
+(right click and 'Save Link/Target As...'), a 22K text file containing one 
+thousand lines with a base/exponent pair on each line, determine which line number 
+has the greatest numerical value. NOTE: The first two lines in the file 
+represent the numbers in the example given above. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>100</ProblemID>
@@ -1183,8 +1186,8 @@ in the example given above. </Description>
 		<Description>Let S(A) represent the sum of elements in set A of size n. We shall call 
 it a special sum set if for any two non-empty disjoint subsets, B and C, the 
 following properties are true: S(B) ≠ S(C); that is, sums of subsets cannot be 
-equal. If B contains more elements than C then S(B) > S(C). If S(A) is minimised 
-for a given n, we shall call it an optimum special sum set. The first five 
+equal. If B contains more elements than C then S(B) greater than S(C). If S(A) is 
+minimised for a given n, we shall call it an optimum special sum set. The first five 
 optimum special sum sets are given below. n = 1: {1} n = 2: {1, 2} n = 3: {2, 3, 
 4} n = 4: {3, 5, 6, 7} n = 5: {6, 9, 11, 12, 13} It seems that for a given 
 optimum set, A = {a1, a2, ... , an}, the next optimum set is of the form B = {b, 
@@ -1212,29 +1215,29 @@ which the first nine digits AND the last nine digits are 1-9 pandigital, find k.
 		<Description>Let S(A) represent the sum of elements in set A of size n. We shall call 
 it a special sum set if for any two non-empty disjoint subsets, B and C, the 
 following properties are true: S(B) ≠ S(C); that is, sums of subsets cannot be 
-equal. If B contains more elements than C then S(B) > S(C). For example, {81, 88, 
-75, 42, 87, 84, 86, 65} is not a special sum set because 65 + 87 + 88 = 75 + 
-81 + 84, whereas {157, 150, 164, 119, 79, 159, 161, 139, 158} satisfies both 
-rules for all possible subset pair combinations and S(A) = 1286. Using sets.txt 
-(right click and "Save Link/Target As..."), a 4K text file with one-hundred sets 
-containing seven to twelve elements (the two examples given above are the first two 
-sets in the file), identify all the special sum sets, A1, A2, ..., Ak, and find 
-the value of S(A1) + S(A2) + ... + S(Ak). NOTE: This problem is related to 
-Problem 103 and Problem 106. </Description>
+equal. If B contains more elements than C then S(B) greater than S(C). For 
+example, {81, 88, 75, 42, 87, 84, 86, 65} is not a special sum set because 65 + 87 
++ 88 = 75 + 81 + 84, whereas {157, 150, 164, 119, 79, 159, 161, 139, 158} 
+satisfies both rules for all possible subset pair combinations and S(A) = 1286. 
+Using sets.txt (right click and "Save Link/Target As..."), a 4K text file with 
+one-hundred sets containing seven to twelve elements (the two examples given above are 
+the first two sets in the file), identify all the special sum sets, A1, A2, 
+..., Ak, and find the value of S(A1) + S(A2) + ... + S(Ak). NOTE: This problem 
+is related to Problem 103 and Problem 106. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>106</ProblemID>
 		<Description>Let S(A) represent the sum of elements in set A of size n. We shall call 
 it a special sum set if for any two non-empty disjoint subsets, B and C, the 
 following properties are true: S(B) ≠ S(C); that is, sums of subsets cannot be 
-equal. If B contains more elements than C then S(B) > S(C). For this problem we 
-shall assume that a given set contains n strictly increasing elements and it 
-already satisfies the second rule. Surprisingly, out of the 25 possible subset 
-pairs that can be obtained from a set for which n = 4, only 1 of these pairs 
-need to be tested for equality (first rule). Similarly, when n = 7, only 70 out 
-of the 966 subset pairs need to be tested. For n = 12, how many of the 261625 
-subset pairs that can be obtained need to be tested for equality? NOTE: This 
-problem is related to Problem 103 and Problem 105. </Description>
+equal. If B contains more elements than C then S(B) greater than S(C). For this 
+problem we shall assume that a given set contains n strictly increasing elements 
+and it already satisfies the second rule. Surprisingly, out of the 25 possible 
+subset pairs that can be obtained from a set for which n = 4, only 1 of these 
+pairs need to be tested for equality (first rule). Similarly, when n = 7, only 
+70 out of the 966 subset pairs need to be tested. For n = 12, how many of the 
+261625 subset pairs that can be obtained need to be tested for equality? NOTE: 
+This problem is related to Problem 103 and Problem 105. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>107</ProblemID>
@@ -1480,11 +1483,11 @@ least value of n for which C(n) = 1000. </Description>
 		<Description>The radical of n, rad(n), is the product of distinct prime factors of n. 
 For example, 504 = 23 × 32 × 7, so rad(504) = 2 × 3 × 7 = 42. We shall define 
 the triplet of positive integers (a, b, c) to be an abc-hit if: GCD(a, b) = 
-GCD(a, c) = GCD(b, c) = 1 a < b a + b = c rad(abc) < c For example, (5, 27, 32) 
-is an abc-hit, because: GCD(5, 27) = GCD(5, 32) = GCD(27, 32) = 1 5 < 27 5 + 
-27 = 32 rad(4320) = 30 < 32 It turns out that abc-hits are quite rare and 
-there are only thirty-one abc-hits for c < 1000, with ∑c = 12523. Find ∑c for c 
-< 120000. </Description>
+GCD(a, c) = GCD(b, c) = 1 a less than b a + b = c rad(abc) less than c For 
+example, (5, 27, 32) is an abc-hit, because: GCD(5, 27) = GCD(5, 32) = GCD(27, 32) 
+= 1 5 less than 27 5 + 27 = 32 rad(4320) = 30 less than 32 It turns out that 
+abc-hits are quite rare and there are only thirty-one abc-hits for c less than 
+1000, with ∑c = 12523. Find ∑c for c less than 120000. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>128</ProblemID>
@@ -1518,11 +1521,11 @@ R(k) to be a repunit of length k; for example, R(6) = 111111. Given that n is a
 positive integer and GCD(n, 10) = 1, it can be shown that there always exists a 
 value, k, for which R(k) is divisible by n, and let A(n) be the least such value 
 of k; for example, A(7) = 6 and A(41) = 5. You are given that for all primes, 
-p > 5, that p − 1 is divisible by A(p). For example, when p = 41, A(41) = 5, 
-and 40 is divisible by 5. However, there are rare composite values for which 
-this is also true; the first five examples being 91, 259, 451, 481, and 703. 
-Find the sum of the first twenty-five composite values of n for which GCD(n, 
-10) = 1 and n − 1 is divisible by A(n). </Description>
+p greater than 5, that p − 1 is divisible by A(p). For example, when p = 41, 
+A(41) = 5, and 40 is divisible by 5. However, there are rare composite values 
+for which this is also true; the first five examples being 91, 259, 451, 481, 
+and 703. Find the sum of the first twenty-five composite values of n for which 
+GCD(n, 10) = 1 and n − 1 is divisible by A(n). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>131</ProblemID>
@@ -1556,10 +1559,10 @@ factor of R(10n). </Description>
 		<Description>Consider the consecutive primes p1 = 19 and p2 = 23. It can be verified 
 that 1219 is the smallest number such that the last digits are formed by p1 
 whilst also being divisible by p2. In fact, with the exception of p1 = 3 and p2 = 
-5, for every pair of consecutive primes, p2 > p1, there exist values of n for 
-which the last digits are formed by p1 and n is divisible by p2. Let S be the 
-smallest of these values of n. Find ∑ S for every pair of consecutive primes with 5 
-≤ p1 ≤ 1000000. </Description>
+5, for every pair of consecutive primes, p2 greater than p1, there exist 
+values of n for which the last digits are formed by p1 and n is divisible by p2. 
+Let S be the smallest of these values of n. Find ∑ S for every pair of 
+consecutive primes with 5 ≤ p1 ≤ 1000000. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>135</ProblemID>
@@ -1639,8 +1642,9 @@ progressive perfect squares below one trillion (1012). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>142</ProblemID>
-		<Description>Find the smallest x + y + z with integers x > y > z > 0 such that x + y, x 
-− y, x + z, x − z, y + z, y − z are all perfect squares. </Description>
+		<Description>Find the smallest x + y + z with integers x greater than y greater than z 
+greater than 0 such that x + y, x − y, x + z, x − z, y + z, y − z are all perfect 
+squares. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>143</ProblemID>
@@ -1879,7 +1883,7 @@ Sum (DRS) the sum of the digital roots of the individual factors of our
 number. The chart below demonstrates all of the DRS values for 24. Factorisation 
 Digital Root Sum 2x2x2x3 9 2x3x4 9 2x2x6 10 4x6 10 3x8 11 2x12 5 24 6 The maximum 
 Digital Root Sum of 24 is 11. The function mdrs(n) gives the maximum Digital Root 
-Sum of n. So mdrs(24)=11. Find ∑mdrs(n) for 1 < n < 1,000,000. </Description>
+Sum of n. So mdrs(24)=11. Find ∑mdrs(n) for 1 less than n less than 1,000,000. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>160</ProblemID>
@@ -1966,8 +1970,8 @@ column, and both diagonals have the same sum? </Description>
 	<Problem>
 		<ProblemID>167</ProblemID>
 		<Description>For two positive integers a and b, the Ulam sequence U(a,b) is defined by 
-U(a,b)1 = a, U(a,b)2 = b and for k > 2, U(a,b)k is the smallest integer greater 
-than U(a,b)(k-1) which can be written in exactly one way as the sum of two 
+U(a,b)1 = a, U(a,b)2 = b and for k greater than 2, U(a,b)k is the smallest integer 
+greater than U(a,b)(k-1) which can be written in exactly one way as the sum of two 
 distinct previous members of U(a,b). For example, the sequence U(1,2) begins with 
 1, 2, 3 = 1 + 2, 4 = 1 + 3, 6 = 2 + 4, 8 = 2 + 6, 11 = 3 + 8; 5 does not 
 belong to it because 5 = 1 + 4 = 2 + 3 has two representations as the sum of two 
@@ -1979,8 +1983,8 @@ k = 1011. </Description>
 		<Description>Consider the number 142857. We can right-rotate this number by moving the 
 last digit (7) to the front of it, giving us 714285. It can be verified that 
 714285=5×142857. This demonstrates an unusual property of 142857: it is a divisor of its 
-right-rotation. Find the last 5 digits of the sum of all integers n, 10 < n < 10100, that 
-have this property. </Description>
+right-rotation. Find the last 5 digits of the sum of all integers n, 10 less than n 
+less than 10100, that have this property. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>169</ProblemID>
@@ -2005,7 +2009,7 @@ numbers is also a 0 to 9 pandigital 10-digit number? </Description>
 		<Description>For a positive integer n, let f(n) be the sum of the squares of the digits 
 (in base 10) of n, e.g. f(3) = 32 = 9, f(25) = 22 + 52 = 4 + 25 = 29, f(442) = 
 42 + 42 + 22 = 16 + 16 + 4 = 36 Find the last nine digits of the sum of all 
-n, 0 < n < 1020, such that f(n) is a perfect square. </Description>
+n, 0 less than n less than 1020, such that f(n) is a perfect square. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>172</ProblemID>
@@ -2078,9 +2082,9 @@ pandigital step numbers less than 1040 are there? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>179</ProblemID>
-		<Description>Find the number of integers 1 < n < 107, for which n and n + 1 have the 
-same number of positive divisors. For example, 14 has the positive divisors 1, 
-2, 7, 14 while 15 has 1, 3, 5, 15. </Description>
+		<Description>Find the number of integers 1 less than n less than 107, for which n and n 
++ 1 have the same number of positive divisors. For example, 14 has the 
+positive divisors 1, 2, 7, 14 while 15 has 1, 3, 5, 15. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>180</ProblemID>
@@ -2088,10 +2092,10 @@ same number of positive divisors. For example, 14 has the positive divisors 1,
 − zn+1 f2,n(x,y,z) = (xy + yz + zx)*(xn-1 + yn-1 − zn-1) f3,n(x,y,z) = 
 xyz*(xn-2 + yn-2 − zn-2) and their combination fn(x,y,z) = f1,n(x,y,z) + f2,n(x,y,z) 
 − f3,n(x,y,z) We call (x,y,z) a golden triple of order k if x, y, and z are 
-all rational numbers of the form a / b with 0 < a < b ≤ k and there is (at 
-least) one integer n, so that fn(x,y,z) = 0. Let s(x,y,z) = x + y + z. Let t = u 
-/ v be the sum of all distinct s(x,y,z) for all golden triples (x,y,z) of 
-order 35. All the s(x,y,z) and t must be in reduced form. Find u + v. </Description>
+all rational numbers of the form a / b with 0 less than a less than b ≤ k and 
+there is (at least) one integer n, so that fn(x,y,z) = 0. Let s(x,y,z) = x + y + 
+z. Let t = u / v be the sum of all distinct s(x,y,z) for all golden triples 
+(x,y,z) of order 35. All the s(x,y,z) and t must be in reduced form. Find u + v. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>181</ProblemID>
@@ -2137,14 +2141,15 @@ N ≤ 100 is 2438. Find ΣD(N) for 5 ≤ N ≤ 10000. </Description>
 	<Problem>
 		<ProblemID>184</ProblemID>
 		<Description>Consider the set Ir of points (x,y) with integer co-ordinates in the 
-interior of the circle with radius r, centered at the origin, i.e. x2 + y2 < r2. 
-For a radius of 2, I2 contains the nine points (0,0), (1,0), (1,1), (0,1), 
-(-1,1), (-1,0), (-1,-1), (0,-1) and (1,-1). There are eight triangles having all 
-three vertices in I2 which contain the origin in the interior. Two of them are 
-shown below, the others are obtained from these by rotation. For a radius of 3, 
-there are 360 triangles containing the origin in the interior and having all 
-vertices in I3 and for I5 the number is 10600. How many triangles are there 
-containing the origin in the interior and having all three vertices in I105? </Description>
+interior of the circle with radius r, centered at the origin, i.e. x2 + y2 
+less than r2. For a radius of 2, I2 contains the nine points (0,0), (1,0), (1,1), 
+(0,1), (-1,1), (-1,0), (-1,-1), (0,-1) and (1,-1). There are eight triangles 
+having all three vertices in I2 which contain the origin in the interior. Two of 
+them are shown below, the others are obtained from these by rotation. For a 
+radius of 3, there are 360 triangles containing the origin in the interior and 
+having all vertices in I3 and for I5 the number is 10600. How many triangles are 
+there containing the origin in the interior and having all three vertices in 
+I105? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>185</ProblemID>
@@ -2187,8 +2192,8 @@ a friend, or a friend of a friend etc., of the Prime Minister? </Description>
 		<Description>A composite is a number containing at least two prime factors. For 
 example, 15 = 3 × 5; 9 = 3 × 3; 12 = 2 × 2 × 3. There are ten composites below 
 thirty containing precisely two, not necessarily distinct, prime factors: 4, 6, 
-9, 10, 14, 15, 21, 22, 25, 26. How many composite integers, n < 108, have 
-precisely two, not necessarily distinct, prime factors? </Description>
+9, 10, 14, 15, 21, 22, 25, 26. How many composite integers, n less than 108, 
+have precisely two, not necessarily distinct, prime factors? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>188</ProblemID>
@@ -2235,11 +2240,11 @@ exist over a 30-day period? </Description>
 		<Description>Let x be a real number. A best approximation to x for the denominator 
 bound d is a rational number r/s in reduced form, with s ≤ d, such that any 
 rational number which is closer to x than r/s has a denominator larger than d: 
-|p/q-x| < |r/s-x| ⇒ q > d For example, the best approximation to √13 for the 
-denominator bound 20 is 18/5 and the best approximation to √13 for the denominator 
-bound 30 is 101/28. Find the sum of all denominators of the best approximations 
-to √n for the denominator bound 1012, where n is not a perfect square and 1 < 
-n ≤ 100000. </Description>
+|p/q-x| less than |r/s-x| ⇒ q greater than d For example, the best approximation 
+to √13 for the denominator bound 20 is 18/5 and the best approximation to √13 
+for the denominator bound 30 is 101/28. Find the sum of all denominators of 
+the best approximations to √n for the denominator bound 1012, where n is not a 
+perfect square and 1 less than n ≤ 100000. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>193</ProblemID>
@@ -2291,13 +2296,14 @@ n = 1012. Give your answer with 9 digits after the decimal point. </Description>
 		<ProblemID>198</ProblemID>
 		<Description>A best approximation to a real number x for the denominator bound d is a 
 rational number r/s (in reduced form) with s ≤ d, so that any rational number p/q 
-which is closer to x than r/s has q > d. Usually the best approximation to a 
-real number is uniquely determined for all denominator bounds. However, there 
-are some exceptions, e.g. 9/40 has the two best approximations 1/4 and 1/5 for 
-the denominator bound 6. We shall call a real number x ambiguous, if there is 
-at least one denominator bound for which x possesses two best approximations. 
-Clearly, an ambiguous number is necessarily rational. How many ambiguous numbers x 
-= p/q, 0 < x < 1/100, are there whose denominator q does not exceed 108? </Description>
+which is closer to x than r/s has q greater than d. Usually the best 
+approximation to a real number is uniquely determined for all denominator bounds. 
+However, there are some exceptions, e.g. 9/40 has the two best approximations 1/4 
+and 1/5 for the denominator bound 6. We shall call a real number x ambiguous, 
+if there is at least one denominator bound for which x possesses two best 
+approximations. Clearly, an ambiguous number is necessarily rational. How many ambiguous 
+numbers x = p/q, 0 less than x less than 1/100, are there whose denominator q does 
+not exceed 108? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>199</ProblemID>
@@ -2395,7 +2401,7 @@ number. The first two such partitions are 41 = 21 + 2 and 41.5849625... =
 Thus P(6) = 1/2. In the following table are listed some values of P(m)    P(5) 
 = 1/1    P(10) = 1/2    P(15) = 2/3    P(20) = 1/2    P(25) = 1/2    P(30) = 
 2/5    ...    P(180) = 1/4    P(185) = 3/13 Find the smallest m for which P(m) 
-< 1/12345 </Description>
+less than 1/12345 </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>208</ProblemID>
@@ -2425,8 +2431,8 @@ N(8)=100. What is N(1,000,000,000)? </Description>
 	<Problem>
 		<ProblemID>211</ProblemID>
 		<Description>For a positive integer n, let σ2(n) be the sum of the squares of its 
-divisors. For example, σ2(10) = 1 + 4 + 25 + 100 = 130. Find the sum of all n, 0 < n 
-< 64,000,000 such that σ2(n) is a perfect square. </Description>
+divisors. For example, σ2(10) = 1 + 4 + 25 + 100 = 130. Find the sum of all n, 0 
+less than n less than 64,000,000 such that σ2(n) is a perfect square. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>212</ProblemID>
@@ -2474,10 +2480,10 @@ written W(9,3) = 8. Calculate W(32,10). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>216</ProblemID>
-		<Description>Consider numbers t(n) of the form t(n) = 2n2-1 with n > 1. The first such 
-numbers are 7, 17, 31, 49, 71, 97, 127 and 161. It turns out that only 49 = 7*7 
-and 161 = 7*23 are not prime. For n ≤ 10000 there are 2202 numbers t(n) that 
-are prime. How many numbers t(n) are prime for n ≤ 50,000,000 ? </Description>
+		<Description>Consider numbers t(n) of the form t(n) = 2n2-1 with n greater than 1. The 
+first such numbers are 7, 17, 31, 49, 71, 97, 127 and 161. It turns out that 
+only 49 = 7*7 and 161 = 7*23 are not prime. For n ≤ 10000 there are 2202 
+numbers t(n) that are prime. How many numbers t(n) are prime for n ≤ 50,000,000 ? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>217</ProblemID>
@@ -2751,8 +2757,8 @@ fractions; for example, with d = 12: 1/12 , 2/12 , 3/12 , 4/12 , 5/12 , 6/12
 down a resilient fraction. Furthermore we shall define the resilience of a 
 denominator, R(d), to be the ratio of its proper fractions that are resilient; for 
 example, R(12) = 4/11 . In fact, d = 12 is the smallest denominator having a 
-resilience R(d) < 4/10 . Find the smallest denominator d, having a resilience R(d) < 
-15499/94744 . </Description>
+resilience R(d) less than 4/10 . Find the smallest denominator d, having a resilience 
+R(d) less than 15499/94744 . </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>244</ProblemID>
@@ -2774,11 +2780,11 @@ checksums for the paths having the minimal length? </Description>
 		<Description>We shall call a fraction that cannot be cancelled down a resilient 
 fraction. Furthermore we shall define the resilience of a denominator, R(d), to be 
 the ratio of its proper fractions that are resilient; for example, R(12) = 
-4⁄11. The resilience of a number d > 1 is then φ(d) d − 1 , where φ is Euler's 
-totient function. We further define the coresilience of a number n > 1 as C(n) =  
-n − φ(n) n − 1 . The coresilience of a prime p is C(p) =  1 p − 1 . Find the 
-sum of all composite integers 1 < n ≤ 2×1011, for which C(n) is a unit 
-fraction. </Description>
+4⁄11. The resilience of a number d greater than 1 is then φ(d) d − 1 , where φ 
+is Euler's totient function. We further define the coresilience of a number n 
+greater than 1 as C(n) =  n − φ(n) n − 1 . The coresilience of a prime p is C(p) =  1 p 
+− 1 . Find the sum of all composite integers 1 less than n ≤ 2×1011, for 
+which C(n) is a unit fraction. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>246</ProblemID>
@@ -2889,9 +2895,9 @@ low. For example, we can find the rounded-square-root of a 5-digit integer
 (10,000 ≤ n ≤ 99,999) with an average of 3.2102888889 iterations (the average 
 value was rounded to 10 decimal places). Using the procedure described above, 
 what is the average number of iterations required to find the 
-rounded-square-root of a 14-digit number (1013 ≤ n < 1014)? Give your answer rounded to 10 
-decimal places. Note: The symbols ⌊x⌋ and ⌈x⌉ represent the floor function and 
-ceiling function respectively. </Description>
+rounded-square-root of a 14-digit number (1013 ≤ n less than 1014)? Give your answer rounded 
+to 10 decimal places. Note: The symbols ⌊x⌋ and ⌈x⌉ represent the floor 
+function and ceiling function respectively. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>256</ProblemID>
@@ -2965,11 +2971,12 @@ losing configurations with xi ≤ yi ≤ zi ≤ 1000. </Description>
 	<Problem>
 		<ProblemID>261</ProblemID>
 		<Description>Let us call a positive integer k a square-pivot, if there is a pair of 
-integers m > 0 and n ≥ k, such that the sum of the (m+1) consecutive squares up to 
-k equals the sum of the m consecutive squares from (n+1) on: (k-m)2 + ... + 
-k2 = (n+1)2 + ... + (n+m)2. Some small square-pivots are 4: 32 + 42 = 52 21: 
-202 + 212 = 292 24: 212 + 222 + 232 + 242 = 252 + 262 + 272 110: 1082 + 1092 + 
-1102 = 1332 + 1342 Find the sum of all distinct square-pivots ≤ 1010. </Description>
+integers m greater than 0 and n ≥ k, such that the sum of the (m+1) consecutive 
+squares up to k equals the sum of the m consecutive squares from (n+1) on: (k-m)2 
++ ... + k2 = (n+1)2 + ... + (n+m)2. Some small square-pivots are 4: 32 + 42 
+= 52 21: 202 + 212 = 292 24: 212 + 222 + 232 + 242 = 252 + 262 + 272 110: 
+1082 + 1092 + 1102 = 1332 + 1342 Find the sum of all distinct square-pivots ≤ 
+1010. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>262</ProblemID>
@@ -3096,22 +3103,22 @@ numbers n≤1011 for which C(n)=242. </Description>
 integer. For N=65 there are two solutions: a=1, b=8 and a=4, b=7. We call S(N) the 
 sum of the values of a of all solutions of a2 + b2 = N, 0 ≤ a ≤ b, a, b and N 
 integer. Thus S(65) = 1 + 4 = 5. Find ∑S(N), for all squarefree N only divisible by 
-primes of the form 4k+1 with 4k+1 < 150. </Description>
+primes of the form 4k+1 with 4k+1 less than 150. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>274</ProblemID>
-		<Description>For each integer p > 1 coprime to 10 there is a positive divisibility 
-multiplier m < p which preserves divisibility by p for the following function on any 
-positive integer, n: f(n) = (all but the last digit of n) + (the last digit of n) * 
-m That is, if m is the divisibility multiplier for p, then f(n) is divisible 
-by p if and only if n is divisible by p. (When n is much larger than p, f(n) 
-will be less than n and repeated application of f provides a multiplicative 
-divisibility test for p.) For example, the divisibility multiplier for 113 is 34. 
-f(76275) = 7627 + 5 * 34 = 7797 : 76275 and 7797 are both divisible by 113 f(12345) 
-= 1234 + 5 * 34 = 1404 : 12345 and 1404 are both not divisible by 113 The 
-sum of the divisibility multipliers for the primes that are coprime to 10 and 
-less than 1000 is 39517. What is the sum of the divisibility multipliers for 
-the primes that are coprime to 10 and less than 107? </Description>
+		<Description>For each integer p greater than 1 coprime to 10 there is a positive 
+divisibility multiplier m less than p which preserves divisibility by p for the 
+following function on any positive integer, n: f(n) = (all but the last digit of n) 
++ (the last digit of n) * m That is, if m is the divisibility multiplier for 
+p, then f(n) is divisible by p if and only if n is divisible by p. (When n is 
+much larger than p, f(n) will be less than n and repeated application of f 
+provides a multiplicative divisibility test for p.) For example, the divisibility 
+multiplier for 113 is 34. f(76275) = 7627 + 5 * 34 = 7797 : 76275 and 7797 are both 
+divisible by 113 f(12345) = 1234 + 5 * 34 = 1404 : 12345 and 1404 are both not 
+divisible by 113 The sum of the divisibility multipliers for the primes that are 
+coprime to 10 and less than 1000 is 39517. What is the sum of the divisibility 
+multipliers for the primes that are coprime to 10 and less than 107? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>275</ProblemID>
@@ -3144,20 +3151,21 @@ can list out the sequence of steps. For instance if a1=231, then the sequence
 {an}={231,77,51,17,11,7,10,14,9,3,1} corresponds to the steps "DdDddUUdDD". Of course, there are other 
 sequences that begin with that same sequence "DdDddUUdDD....". For instance, if 
 a1=1004064, then the sequence is DdDddUUdDDDdUDUUUdDdUUDDDUdDD. In fact, 1004064 is 
-the smallest possible a1 > 106 that begins with the sequence DdDddUUdDD. What 
-is the smallest a1 > 1015 that begins with the sequence 
+the smallest possible a1 greater than 106 that begins with the sequence 
+DdDddUUdDD. What is the smallest a1 greater than 1015 that begins with the sequence 
 "UDDDUdddDDUDDddDdDddDDUDDdUUDd"? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>278</ProblemID>
-		<Description>Given the values of integers 1 < a1 < a2 <... < an, consider the linear 
-combination q1a1 + q2a2 + ... + qnan = b, using only integer values qk ≥ 0. Note that 
-for a given set of ak, it may be that not all values of b are possible. For 
-instance, if a1 = 5 and a2 = 7, there are no q1 ≥ 0 and q2 ≥ 0 such that b could be 
-1, 2, 3, 4, 6, 8, 9, 11, 13, 16, 18 or 23. In fact, 23 is the largest 
-impossible value of b for a1 = 5 and a2 = 7. We therefore call f(5, 7) = 23. 
-Similarly, it can be shown that f(6, 10, 15)=29 and f(14, 22, 77) = 195. Find ∑ 
-f(p*q,p*r,q*r), where p, q and r are prime numbers and p < q < r < 5000. </Description>
+		<Description>Given the values of integers 1 less than a1 less than a2 <... less than 
+an, consider the linear combination q1a1 + q2a2 + ... + qnan = b, using only 
+integer values qk ≥ 0. Note that for a given set of ak, it may be that not all 
+values of b are possible. For instance, if a1 = 5 and a2 = 7, there are no q1 ≥ 0 
+and q2 ≥ 0 such that b could be 1, 2, 3, 4, 6, 8, 9, 11, 13, 16, 18 or 23. In 
+fact, 23 is the largest impossible value of b for a1 = 5 and a2 = 7. We 
+therefore call f(5, 7) = 23. Similarly, it can be shown that f(6, 10, 15)=29 and 
+f(14, 22, 77) = 195. Find ∑ f(p*q,p*r,q*r), where p, q and r are prime numbers 
+and p less than q less than r less than 5000. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>279</ProblemID>
@@ -3282,8 +3290,8 @@ L(2,2) = 37 and L(3,3) = 104290. Find L(6,10) mod 1010. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>290</ProblemID>
-		<Description>How many integers 0 ≤ n < 1018 have the property that the sum of the 
-digits of n equals the sum of digits of 137n? </Description>
+		<Description>How many integers 0 ≤ n less than 1018 have the property that the sum of 
+the digits of n equals the sum of digits of 137n? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>291</ProblemID>
@@ -3305,18 +3313,18 @@ P(30) = 3655 and P(60) = 891045. Find P(120). </Description>
 		<Description>An even positive integer N will be called admissible, if it is a power of 
 2 or its distinct prime factors are consecutive primes. The first twelve 
 admissible numbers are 2,4,6,8,12,16,18,24,30,32,36,48. If N is admissible, the 
-smallest integer M > 1 such that N+M is prime, will be called the pseudo-Fortunate 
-number for N. For example, N=630 is admissible since it is even and its distinct 
-prime factors are the consecutive primes 2,3,5 and 7. The next prime number 
-after 631 is 641; hence, the pseudo-Fortunate number for 630 is M=11. It can 
-also be seen that the pseudo-Fortunate number for 16 is 3. Find the sum of all 
-distinct pseudo-Fortunate numbers for admissible numbers N less than 109. </Description>
+smallest integer M greater than 1 such that N+M is prime, will be called the 
+pseudo-Fortunate number for N. For example, N=630 is admissible since it is even and its 
+distinct prime factors are the consecutive primes 2,3,5 and 7. The next prime 
+number after 631 is 641; hence, the pseudo-Fortunate number for 630 is M=11. It 
+can also be seen that the pseudo-Fortunate number for 16 is 3. Find the sum of 
+all distinct pseudo-Fortunate numbers for admissible numbers N less than 109. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>294</ProblemID>
 		<Description>For a positive integer k, define d(k) as the sum of the digits of k in its 
 usual decimal representation. Thus d(42) = 4+2 = 6. For a positive integer n, 
-define S(n) as the number of positive integers k < 10n with the following 
+define S(n) as the number of positive integers k less than 10n with the following 
 properties : k is divisible by 23 and d(k) = 23. You are given that S(9) = 263626 and 
 S(42) = 6377168878570056. Find S(1112) and give your answer mod 109. </Description>
 	</Problem>
@@ -3331,8 +3339,8 @@ below. C0 and C1 form a lenticular hole, as well as C0 and C2. We call an ordere
 pair of positive real numbers (r1, r2) a lenticular pair if there exist two 
 circles with radii r1 and r2 that form a lenticular hole. We can verify that (1, 
 5) and (5, √65) are the lenticular pairs of the example above. Let L(N) be 
-the number of distinct lenticular pairs (r1, r2) for which 0 < r1 ≤ r2 ≤ N. We 
-can verify that L(10) = 30 and L(100) = 3442. Find L(100 000). </Description>
+the number of distinct lenticular pairs (r1, r2) for which 0 less than r1 ≤ r2 
+≤ N. We can verify that L(10) = 30 and L(100) = 3442. Find L(100 000). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>296</ProblemID>
@@ -3519,10 +3527,11 @@ are also given the height h above the street where the two ladders cross and
 we are asked to find the width of the street (w). Here, we are only concerned 
 with instances where all four variables are positive integers. For example, if 
 x = 70, y = 119 and h = 30, we can calculate that w = 56. In fact, for 
-integer values x, y, h and 0 < x < y < 200, there are only five triplets (x,y,h) 
-producing integer solutions for w: (70, 119, 30), (74, 182, 21), (87, 105, 35), 
-(100, 116, 35) and (119, 175, 40). For integer values x, y, h and 0 < x < y < 1 
-000 000, how many triplets (x,y,h) produce integer solutions for w? </Description>
+integer values x, y, h and 0 less than x less than y less than 200, there are only 
+five triplets (x,y,h) producing integer solutions for w: (70, 119, 30), (74, 
+182, 21), (87, 105, 35), (100, 116, 35) and (119, 175, 40). For integer values 
+x, y, h and 0 less than x less than y less than 1 000 000, how many triplets 
+(x,y,h) produce integer solutions for w? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>310</ProblemID>
@@ -3535,14 +3544,14 @@ next player is 1160. Find the number of losing positions for the next player if
 	</Problem>
 	<Problem>
 		<ProblemID>311</ProblemID>
-		<Description>ABCD is a convex, integer sided quadrilateral with 1 ≤ AB < BC < CD < AD. 
-BD has integer length. O is the midpoint of BD. AO has integer length. We'll 
-call ABCD a biclinic integral quadrilateral if AO = CO ≤ BO = DO. For example, 
-the following quadrilateral is a biclinic integral quadrilateral: AB = 19, BC 
-= 29, CD = 37, AD = 43, BD = 48 and AO = CO = 23. Let B(N) be the number of 
-distinct biclinic integral quadrilaterals ABCD that satisfy AB2+BC2+CD2+AD2 ≤ N. We 
-can verify that B(10 000) = 49 and B(1 000 000) = 38239. Find B(10 000 000 
-000). </Description>
+		<Description>ABCD is a convex, integer sided quadrilateral with 1 ≤ AB less than BC 
+less than CD less than AD. BD has integer length. O is the midpoint of BD. AO has 
+integer length. We'll call ABCD a biclinic integral quadrilateral if AO = CO ≤ BO 
+= DO. For example, the following quadrilateral is a biclinic integral 
+quadrilateral: AB = 19, BC = 29, CD = 37, AD = 43, BD = 48 and AO = CO = 23. Let B(N) be 
+the number of distinct biclinic integral quadrilaterals ABCD that satisfy 
+AB2+BC2+CD2+AD2 ≤ N. We can verify that B(10 000) = 49 and B(1 000 000) = 38239. Find B(10 
+000 000 000). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>312</ProblemID>
@@ -3563,8 +3572,8 @@ the bottom right corner. For example, the following sequence of pictures show
 how the game can be completed in five moves on a 2 by 2 grid. Let S(m,n) 
 represent the minimum number of moves to complete the game on an m by n grid. For 
 example, it can be verified that S(5,4) = 25. There are exactly 5482 grids for 
-which S(m,n) = p2, where p < 100 is prime. How many grids does S(m,n) = p2, 
-where p < 106 is prime? </Description>
+which S(m,n) = p2, where p less than 100 is prime. How many grids does S(m,n) = 
+p2, where p less than 106 is prime? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>314</ProblemID>
@@ -3664,13 +3673,13 @@ fractional part of (√p+√q)2n. Let N(p,q) be the minimal value of n such that
 	</Problem>
 	<Problem>
 		<ProblemID>319</ProblemID>
-		<Description>Let x1, x2,..., xn be a sequence of length n such that: x1 = 2 for all 1 < 
-i ≤ n : xi-1 < xi for all i and j with 1 ≤ i, j ≤ n : (xi) j < (xj + 1)i 
-There are only five such sequences of length 2, namely: {2,4}, {2,5}, {2,6}, 
-{2,7} and {2,8}. There are 293 such sequences of length 5; three examples are 
-given below: {2,5,11,25,55}, {2,6,14,36,88}, {2,8,22,64,181}. Let t(n) denote 
-the number of such sequences of length n. You are given that t(10) = 86195 and 
-t(20) = 5227991891. Find t(1010) and give your answer modulo 109. </Description>
+		<Description>Let x1, x2,..., xn be a sequence of length n such that: x1 = 2 for all 1 
+less than i ≤ n : xi-1 less than xi for all i and j with 1 ≤ i, j ≤ n : (xi) j 
+less than (xj + 1)i There are only five such sequences of length 2, namely: {2,4}, 
+{2,5}, {2,6}, {2,7} and {2,8}. There are 293 such sequences of length 5; three 
+examples are given below: {2,5,11,25,55}, {2,6,14,36,88}, {2,8,22,64,181}. Let t(n) 
+denote the number of such sequences of length n. You are given that t(10) = 86195 
+and t(20) = 5227991891. Find t(1010) and give your answer modulo 109. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>320</ProblemID>
@@ -3696,17 +3705,18 @@ sequence. </Description>
 	<Problem>
 		<ProblemID>322</ProblemID>
 		<Description>Let T(m, n) be the number of the binomial coefficients iCn that are 
-divisible by 10 for n ≤ i < m(i, m and n are positive integers). You are given that 
-T(109, 107-10) = 989697000. Find T(1018, 1012-10). </Description>
+divisible by 10 for n ≤ i less than m(i, m and n are positive integers). You are 
+given that T(109, 107-10) = 989697000. Find T(1018, 1012-10). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>323</ProblemID>
 		<Description>Let y0, y1, y2,... be a sequence of random unsigned 32 bit integers (i.e. 
-0 ≤ yi < 232, every value equally likely). For the sequence xi the following 
-recursion is given: x0 = 0 and xi = xi-1 | yi-1, for i > 0. ( | is the bitwise-OR 
-operator) It can be seen that eventually there will be an index N such that xi = 232 
--1 (a bit-pattern of all ones) for all i ≥ N. Find the expected value of N. 
-Give your answer rounded to 10 digits after the decimal point. </Description>
+0 ≤ yi less than 232, every value equally likely). For the sequence xi the 
+following recursion is given: x0 = 0 and xi = xi-1 | yi-1, for i greater than 0. ( | 
+is the bitwise-OR operator) It can be seen that eventually there will be an 
+index N such that xi = 232 -1 (a bit-pattern of all ones) for all i ≥ N. Find 
+the expected value of N. Give your answer rounded to 10 digits after the 
+decimal point. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>324</ProblemID>
@@ -3731,9 +3741,9 @@ because the first player can immediately remove all stones in the second pile. A
 losing configuration is one where the second player can force a win, no matter 
 what the first player does. For example, (2,3) and (3,4) are losing 
 configurations: any legal move leaves a winning configuration for the second player. 
-Define S(N) as the sum of (xi+yi) for all losing configurations (xi,yi), 0 < xi < 
-yi ≤ N. We can verify that S(10) = 211 and S(104) = 230312207313. Find 
-S(1016) mod 710. </Description>
+Define S(N) as the sum of (xi+yi) for all losing configurations (xi,yi), 0 
+less than xi less than yi ≤ N. We can verify that S(10) = 211 and S(104) = 
+230312207313. Find S(1016) mod 710. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>326</ProblemID>
@@ -3922,10 +3932,11 @@ arrangement for eleven carriages. </Description>
 	<Problem>
 		<ProblemID>337</ProblemID>
 		<Description>Let {a1, a2,..., an} be an integer sequence of length n such that: a1 = 6 
-for all 1 ≤ i < n : φ(ai) < φ(ai+1) < ai < ai+1 1 Let S(N) be the number of 
-such sequences with an ≤ N. For example, S(10) = 4: {6}, {6, 8}, {6, 8, 9} and 
-{6, 10}. We can verify that S(100) = 482073668 and S(10 000) mod 108 = 
-73808307. Find S(20 000 000) mod 108. 1 φ denotes Euler's totient function. </Description>
+for all 1 ≤ i less than n : φ(ai) less than φ(ai+1) less than ai less than 
+ai+1 1 Let S(N) be the number of such sequences with an ≤ N. For example, S(10) 
+= 4: {6}, {6, 8}, {6, 8, 9} and {6, 10}. We can verify that S(100) = 
+482073668 and S(10 000) mod 108 = 73808307. Find S(20 000 000) mod 108. 1 φ denotes 
+Euler's totient function. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>338</ProblemID>
@@ -3941,8 +3952,8 @@ number of distinct rectangles that can be made from a sheet with dimensions w ×
 rectangles congruent to the initial one are not counted in F(w,h). Note also that 
 rectangles with dimensions w × h and dimensions h × w are not considered distinct. 
 For an integer N, let G(N) be the sum of F(w,h) for all pairs w and h which 
-satisfy 0 < h ≤ w ≤ N. We can verify that G(10) = 55, G(103) = 971745 and G(105) = 
-9992617687. Find G(1012). Give your answer modulo 108. </Description>
+satisfy 0 less than h ≤ w ≤ N. We can verify that G(10) = 55, G(103) = 971745 and 
+G(105) = 9992617687. Find G(1012). Give your answer modulo 108. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>339</ProblemID>
@@ -3964,10 +3975,10 @@ behind the decimal point. </Description>
 	<Problem>
 		<ProblemID>340</ProblemID>
 		<Description>For fixed integers a, b, c, define the crazy function F(n) as follows: 
-F(n) = n - c for all n > b F(n) = F(a + F(a + F(a + F(a + n)))) for all n ≤ b. 
-Also, define S(a, b, c) = . For example, if a = 50, b = 2000 and c = 40, then 
-F(0) = 3240 and F(2000) = 2040. Also, S(50, 2000, 40) = 5204240. Find the last 
-9 digits of S(217, 721, 127). </Description>
+F(n) = n - c for all n greater than b F(n) = F(a + F(a + F(a + F(a + n)))) for 
+all n ≤ b. Also, define S(a, b, c) = . For example, if a = 50, b = 2000 and c 
+= 40, then F(0) = 3240 and F(2000) = 2040. Also, S(50, 2000, 40) = 5204240. 
+Find the last 9 digits of S(217, 721, 127). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>341</ProblemID>
@@ -3975,15 +3986,15 @@ F(0) = 3240 and F(2000) = 2040. Also, S(50, 2000, 40) = 5204240. Find the last
 sequence of natural numbers such that n appears exactly G(n) times in the sequence. 
 The values of G(n) for the first few n are n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 
 15 … G(n) 1 2 2 3 3 4 4 4 5 5 5 6 6 6 6 … You are given that G(103) = 86, 
-G(106) = 6137. You are also given that ΣG(n3) = 153506976 for 1 ≤ n < 103. Find 
-ΣG(n3) for 1 ≤ n < 106. </Description>
+G(106) = 6137. You are also given that ΣG(n3) = 153506976 for 1 ≤ n less than 
+103. Find ΣG(n3) for 1 ≤ n less than 106. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>342</ProblemID>
 		<Description>Consider the number 50. 502 = 2500 = 22 × 54, so φ(2500) = 2 × 4 × 53 = 8 
 × 53 = 23 × 53. 1 So 2500 is a square and φ(2500) is a cube. Find the sum of 
-all numbers n, 1 < n < 1010 such that φ(n2) is a cube. 1 φ denotes Euler's 
-totient function. </Description>
+all numbers n, 1 less than n less than 1010 such that φ(n2) is a cube. 1 φ 
+denotes Euler's totient function. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>343</ProblemID>
@@ -4036,10 +4047,10 @@ Matrix Sum of the matrix below equals 3315 ( = 863 + 383 + 343 + 959 + 767):  �
 		<ProblemID>346</ProblemID>
 		<Description>The number 7 is special, because 7 is 111 written in base 2, and 11 
 written in base 6 (i.e. 710 = 116 = 1112). In other words, 7 is a repunit in at 
-least two bases b > 1. We shall call a positive integer with this property a 
-strong repunit. It can be verified that there are 8 strong repunits below 50: 
-{1,7,13,15,21,31,40,43}. Furthermore, the sum of all strong repunits below 1000 equals 15864. Find 
-the sum of all strong repunits below 1012. </Description>
+least two bases b greater than 1. We shall call a positive integer with this 
+property a strong repunit. It can be verified that there are 8 strong repunits 
+below 50: {1,7,13,15,21,31,40,43}. Furthermore, the sum of all strong repunits 
+below 1000 equals 15864. Find the sum of all strong repunits below 1012. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>347</ProblemID>
@@ -4267,11 +4278,12 @@ Bézier curve (green curve) defined by those points looks like. You can also dra
 the point Q0 along the segment P0P1. From the construction it is clear that 
 the Bézier curve will be tangent to the segments P0P1 in P0 and P2P3 in P3. A 
 cubic Bézier curve with P0=(1,0), P1=(1,v), P2=(v,1) and P3=(0,1) is used to 
-approximate a quarter circle. The value v > 0 is chosen such that the area enclosed by 
-the lines OP0, OP3 and the curve is equal to π/4 (the area of the quarter 
-circle). By how many percent does the length of the curve differ from the length of 
-the quarter circle? That is, if L is the length of the curve, calculate 100 × 
-L − π/2π/2 Give your answer rounded to 10 digits behind the decimal point. </Description>
+approximate a quarter circle. The value v greater than 0 is chosen such that the area 
+enclosed by the lines OP0, OP3 and the curve is equal to π/4 (the area of the 
+quarter circle). By how many percent does the length of the curve differ from the 
+length of the quarter circle? That is, if L is the length of the curve, calculate 
+100 × L − π/2π/2 Give your answer rounded to 10 digits behind the decimal 
+point. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>364</ProblemID>
@@ -4412,19 +4424,19 @@ Find M(2 000 000 000). </Description>
 4 Die B: 2 2 2 5 5 5 Die C: 3 3 3 3 3 6 A game is played by two players 
 picking a die in turn and rolling it. The player who rolls the highest value wins. 
 If the first player picks die A and the second player picks die B we get 
-P(second player wins) = 7/12 > 1/2 If the first player picks die B and the second 
-player picks die C we get P(second player wins) = 7/12 > 1/2 If the first player 
-picks die C and the second player picks die A we get P(second player wins) = 
-25/36 > 1/2 So whatever die the first player picks, the second player can pick 
-another die and have a larger than 50% chance of winning. A set of dice having 
-this property is called a nontransitive set of dice. We wish to investigate how 
-many sets of nontransitive dice exist. We will assume the following conditions: 
-There are three six-sided dice with each side having between 1 and N pips, 
-inclusive. Dice with the same set of pips are equal, regardless of which side on the 
-die the pips are located. The same pip value may appear on multiple dice; if 
-both players roll the same value neither player wins. The sets of dice {A,B,C}, 
-{B,C,A} and {C,A,B} are the same set. For N = 7 we find there are 9780 such sets. 
-How many are there for N = 30 ? </Description>
+P(second player wins) = 7/12 greater than 1/2 If the first player picks die B and 
+the second player picks die C we get P(second player wins) = 7/12 greater than 
+1/2 If the first player picks die C and the second player picks die A we get 
+P(second player wins) = 25/36 greater than 1/2 So whatever die the first player 
+picks, the second player can pick another die and have a larger than 50% chance 
+of winning. A set of dice having this property is called a nontransitive set 
+of dice. We wish to investigate how many sets of nontransitive dice exist. We 
+will assume the following conditions: There are three six-sided dice with each 
+side having between 1 and N pips, inclusive. Dice with the same set of pips are 
+equal, regardless of which side on the die the pips are located. The same pip 
+value may appear on multiple dice; if both players roll the same value neither 
+player wins. The sets of dice {A,B,C}, {B,C,A} and {C,A,B} are the same set. For 
+N = 7 we find there are 9780 such sets. How many are there for N = 30 ? </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>377</ProblemID>
@@ -4439,9 +4451,10 @@ f(13^i)$. Give the last 9 digits as your answer. </Description>
 		<ProblemID>378</ProblemID>
 		<Description>Let T(n) be the nth triangle number, so T(n) = n (n+1) 2 . Let dT(n) be 
 the number of divisors of T(n). E.g.: T(7) = 28 and dT(7) = 6. Let Tr(n) be 
-the number of triples (i, j, k) such that 1 ≤ i < j < k ≤ n and dT(i) > dT(j) 
-> dT(k). Tr(20) = 14, Tr(100) = 5772 and Tr(1000) = 11174776. Find Tr(60 000 
-000). Give the last 18 digits of your answer. </Description>
+the number of triples (i, j, k) such that 1 ≤ i less than j less than k ≤ n 
+and dT(i) greater than dT(j) greater than dT(k). Tr(20) = 14, Tr(100) = 5772 
+and Tr(1000) = 11174776. Find Tr(60 000 000). Give the last 18 digits of your 
+answer. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>379</ProblemID>
@@ -4468,7 +4481,7 @@ then the answer format would be 1.2346e12. </Description>
 		<Description>For a prime p let S(p) = (∑(p-k)!) mod(p) for 1 ≤ k ≤ 5. For example, if 
 p=7, (7-1)! + (7-2)! + (7-3)! + (7-4)! + (7-5)! = 6! + 5! + 4! + 3! + 2! = 
 720+120+24+6+2 = 872. As 872 mod(7) = 4, S(7) = 4. It can be verified that ∑S(p) = 480 
-for 5 ≤ p < 100. Find ∑S(p) for 5 ≤ p < 108. </Description>
+for 5 ≤ p less than 100. Find ∑S(p) for 5 ≤ p less than 108. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>382</ProblemID>
@@ -4481,17 +4494,17 @@ side of P is in S, and S contains no other value. For example: The set {3, 4,
 11, 24} generates a polygon with sides 6, 9, 11, and 24 (a quadrilateral). The 
 sets {1, 2, 3} and {2, 3, 4, 9} do not generate any polygon at all. Consider 
 the sequence s, defined as follows: s1 = 1, s2 = 2, s3 = 3 sn = sn-1 + sn-3 
-for n > 3. Let Un be the set {s1, s2, ..., sn}. For example, U10 = {1, 2, 3, 
-4, 6, 9, 13, 19, 28, 41}. Let f(n) be the number of subsets of Un which 
-generate at least one polygon. For example, f(5) = 7, f(10) = 501 and f(25) = 
-18635853. Find the last 9 digits of f(1018). </Description>
+for n greater than 3. Let Un be the set {s1, s2, ..., sn}. For example, U10 = 
+{1, 2, 3, 4, 6, 9, 13, 19, 28, 41}. Let f(n) be the number of subsets of Un 
+which generate at least one polygon. For example, f(5) = 7, f(10) = 501 and 
+f(25) = 18635853. Find the last 9 digits of f(1018). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>383</ProblemID>
 		<Description>Let f5(n) be the largest integer x for which 5x divides n. For example, 
-f5(625000) = 7. Let T5(n) be the number of integers i which satisfy f5((2·i-1)!) < 
-2·f5(i!) and 1 ≤ i ≤ n. It can be verified that T5(103) = 68 and T5(109) = 2408210. 
-Find T5(1018). </Description>
+f5(625000) = 7. Let T5(n) be the number of integers i which satisfy f5((2·i-1)!) 
+less than 2·f5(i!) and 1 ≤ i ≤ n. It can be verified that T5(103) = 68 and T5(109) = 
+2408210. Find T5(1018). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>384</ProblemID>
@@ -4653,24 +4666,24 @@ places. </Description>
 	<Problem>
 		<ProblemID>396</ProblemID>
 		<Description>For any positive integer n, the nth weak Goodstein sequence {g1, g2, g3, 
-...} is defined as: g1 = n for k > 1, gk is obtained by writing gk-1 in base k, 
-interpreting it as a base k + 1 number, and subtracting 1. The sequence terminates when 
-gk becomes 0. For example, the 6th weak Goodstein sequence is {6, 11, 17, 25, 
-...}: g1 = 6. g2 = 11 since 6 = 1102, 1103 = 12, and 12 - 1 = 11. g3 = 17 since 
-11 = 1023, 1024 = 18, and 18 - 1 = 17. g4 = 25 since 17 = 1014, 1015 = 26, 
-and 26 - 1 = 25. and so on. It can be shown that every weak Goodstein sequence 
-terminates. Let G(n) be the number of nonzero elements in the nth weak Goodstein 
-sequence. It can be verified that G(2) = 3, G(4) = 21 and G(6) = 381. It can also be 
-verified that ΣG(n) = 2517 for 1 ≤ n < 8. Find the last 9 digits of ΣG(n) for 1 ≤ n 
-< 16. </Description>
+...} is defined as: g1 = n for k greater than 1, gk is obtained by writing gk-1 
+in base k, interpreting it as a base k + 1 number, and subtracting 1. The 
+sequence terminates when gk becomes 0. For example, the 6th weak Goodstein sequence 
+is {6, 11, 17, 25, ...}: g1 = 6. g2 = 11 since 6 = 1102, 1103 = 12, and 12 - 
+1 = 11. g3 = 17 since 11 = 1023, 1024 = 18, and 18 - 1 = 17. g4 = 25 since 
+17 = 1014, 1015 = 26, and 26 - 1 = 25. and so on. It can be shown that every 
+weak Goodstein sequence terminates. Let G(n) be the number of nonzero elements 
+in the nth weak Goodstein sequence. It can be verified that G(2) = 3, G(4) = 
+21 and G(6) = 381. It can also be verified that ΣG(n) = 2517 for 1 ≤ n 
+less than 8. Find the last 9 digits of ΣG(n) for 1 ≤ n less than 16. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>397</ProblemID>
 		<Description>On the parabola y = x2/k, three points A(a, a2/k), B(b, b2/k) and C(c, 
 c2/k) are chosen. Let F(K, X) be the number of the integer quadruplets (k, a, b, 
 c) such that at least one angle of the triangle ABC is 45-degree, with 1 ≤ k 
-≤ K and -X ≤ a < b < c ≤ X. For example, F(1, 10) = 41 and F(10, 100) = 
-12492. Find F(106, 109). </Description>
+≤ K and -X ≤ a less than b less than c ≤ X. For example, F(1, 10) = 41 and 
+F(10, 100) = 12492. Find F(106, 109). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>398</ProblemID>
@@ -4730,10 +4743,10 @@ are: 1,6,16,37,63 and 113. Find SIGMA2(1015) modulo 109. </Description>
 for every integer n. It can also be shown that 6 is the largest integer 
 satisfying this property. Define M(a, b, c) as the maximum m such that n4 + an3 + bn2 
 + cn is a multiple of m for all integers n. For example, M(4, 2, 5) = 6. 
-Also, define S(N) as the sum of M(a, b, c) for all 0 < a, b, c ≤ N. We can 
-verify that S(10) = 1972 and S(10000) = 2024258331114. Let Fk be the Fibonacci 
-sequence: F0 = 0, F1 = 1 and Fk = Fk-1 + Fk-2 for k ≥ 2. Find the last 9 digits of Σ 
-S(Fk) for 2 ≤ k ≤ 1234567890123. </Description>
+Also, define S(N) as the sum of M(a, b, c) for all 0 less than a, b, c ≤ N. We 
+can verify that S(10) = 1972 and S(10000) = 2024258331114. Let Fk be the 
+Fibonacci sequence: F0 = 0, F1 = 1 and Fk = Fk-1 + Fk-2 for k ≥ 2. Find the last 9 
+digits of Σ S(Fk) for 2 ≤ k ≤ 1234567890123. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>403</ProblemID>
@@ -4749,10 +4762,10 @@ S(1012). Give your answer mod 108. </Description>
 		<ProblemID>404</ProblemID>
 		<Description>Ea is an ellipse with an equation of the form x2 + 4y2 = 4a2. Ea' is the 
 rotated image of Ea by θ degrees counterclockwise around the origin O(0, 0) for 0° 
-< θ < 90°. b is the distance to the origin of the two intersection points 
-closest to the origin and c is the distance of the two other intersection points. 
-We call an ordered triplet (a, b, c) a canonical ellipsoidal triplet if a, b 
-and c are positive integers. For example, (209, 247, 286) is a canonical 
+less than θ less than 90°. b is the distance to the origin of the two intersection 
+points closest to the origin and c is the distance of the two other intersection 
+points. We call an ordered triplet (a, b, c) a canonical ellipsoidal triplet if a, 
+b and c are positive integers. For example, (209, 247, 286) is a canonical 
 ellipsoidal triplet. Let C(N) be the number of distinct canonical ellipsoidal triplets 
 (a, b, c) for a ≤ N. It can be verified that C(103) = 7, C(104) = 106 and 
 C(106) = 11845. Find C(1017). </Description>
@@ -4760,8 +4773,8 @@ C(106) = 11845. Find C(1017). </Description>
 	<Problem>
 		<ProblemID>405</ProblemID>
 		<Description>We wish to tile a rectangle whose length is twice its width. Let T(0) be 
-the tiling consisting of a single rectangle. For n > 0, let T(n) be obtained 
-from T(n-1) by replacing all tiles in the following manner: The following 
+the tiling consisting of a single rectangle. For n greater than 0, let T(n) be 
+obtained from T(n-1) by replacing all tiles in the following manner: The following 
 animation demonstrates the tilings T(n) for n from 0 to 5: Let f(n) be the number of 
 points where four tiles meet in T(n). For example, f(1) = 0, f(4) = 82 and f(109) 
 mod 177 = 126897180. Find f(10k) for k = 1018, give your answer modulo 177. </Description>
@@ -4795,8 +4808,8 @@ answer rounded to 8 decimal places behind the decimal point. </Description>
 	<Problem>
 		<ProblemID>407</ProblemID>
 		<Description>If we calculate a2 mod 6 for 0 ≤ a ≤ 5 we get: 0,1,4,3,4,1. The largest 
-value of a such that a2 ≡ a mod 6 is 4. Let's call M(n) the largest value of a < 
-n such that a2 ≡ a (mod n). So M(6) = 4. Find ∑M(n) for 1 ≤ n ≤ 107. </Description>
+value of a such that a2 ≡ a mod 6 is 4. Let's call M(n) the largest value of a 
+less than n such that a2 ≡ a (mod n). So M(6) = 4. Find ∑M(n) for 1 ≤ n ≤ 107. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>408</ProblemID>
@@ -4824,8 +4837,8 @@ example, W(1) = 1, W(2) = 6, W(3) = 168, W(5) = 19764360 and W(100) mod
 b) and Q(-a, c) so that the line passing through P and Q is tangent to C. For 
 example, the quadruplet (r, a, b, c) = (2, 6, 2, -7) satisfies this property. Let 
 F(R, X) be the number of the integer quadruplets (r, a, b, c) with this 
-property, and with 0 < r ≤ R and 0 < a ≤ X. We can verify that F(1, 5) = 10, F(2, 
-10) = 52 and F(10, 100) = 3384. Find F(108, 109) + F(109, 108). </Description>
+property, and with 0 less than r ≤ R and 0 less than a ≤ X. We can verify that F(1, 
+5) = 10, F(2, 10) = 52 and F(10, 100) = 3384. Find F(108, 109) + F(109, 108). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>411</ProblemID>
@@ -4882,11 +4895,11 @@ and a base b = 6t+3≠9, a Kaprekar constant exists. E.g. base 15:
 for 5 digits. Define the function sb(i) to be 0 if i = Cb or if i written in 
 base b consists of 5 identical digits the number of iterations it takes the 
 Kaprekar routine in base b to arrive at Cb, otherwise Note that we can define sb(i) 
-for all integers i < b5. If i written in base b takes less than 5 digits, the 
-number is padded with leading zero digits until we have 5 digits before applying 
-the Kaprekar routine. Define S(b) as the sum of sb(i) for 0 < i < b5. E.g. 
-S(15) = 5274369 S(111) = 400668930299 Find the sum of S(6k+3) for 2 ≤ k ≤ 300. 
-Give the last 18 digits as your answer. </Description>
+for all integers i less than b5. If i written in base b takes less than 5 
+digits, the number is padded with leading zero digits until we have 5 digits 
+before applying the Kaprekar routine. Define S(b) as the sum of sb(i) for 0 
+less than i less than b5. E.g. S(15) = 5274369 S(111) = 400668930299 Find the sum of 
+S(6k+3) for 2 ≤ k ≤ 300. Give the last 18 digits as your answer. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>415</ProblemID>
@@ -4958,25 +4971,25 @@ ways. We can verify that F(50) = 7 and F(1000) = 1019. Find F(107). </Descriptio
 	</Problem>
 	<Problem>
 		<ProblemID>421</ProblemID>
-		<Description>Numbers of the form n15+1 are composite for every integer n > 1. For 
-positive integers n and m let s(n,m) be defined as the sum of the distinct prime 
-factors of n15+1 not exceeding m. E.g. 215+1 = 3×3×11×331. So s(2,10) = 3 and 
-s(2,1000) = 3+11+331 = 345. Also 1015+1 = 7×11×13×211×241×2161×9091. So s(10,100) = 
-31 and s(10,1000) = 483. Find ∑ s(n,108) for 1 ≤ n ≤ 1011. </Description>
+		<Description>Numbers of the form n15+1 are composite for every integer n greater than 
+1. For positive integers n and m let s(n,m) be defined as the sum of the 
+distinct prime factors of n15+1 not exceeding m. E.g. 215+1 = 3×3×11×331. So 
+s(2,10) = 3 and s(2,1000) = 3+11+331 = 345. Also 1015+1 = 
+7×11×13×211×241×2161×9091. So s(10,100) = 31 and s(10,1000) = 483. Find ∑ s(n,108) for 1 ≤ n ≤ 1011. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>422</ProblemID>
 		<Description>Let H be the hyperbola defined by the equation 12x2 + 7xy - 12y2 = 625. 
 Next, define X as the point (7, 1). It can be seen that X is in H. Now we define 
 a sequence of points in H, {Pi : i ≥ 1}, as: P1 = (13, 61/4). P2 = (-43/6, 
--4). For i > 2, Pi is the unique point in H that is different from Pi-1 and 
-such that line PiPi-1 is parallel to line Pi-2X. It can be shown that Pi is 
-well-defined, and that its coordinates are always rational. You are given that P3 = 
-(-19/2, -229/24), P4 = (1267/144, -37/12) and P7 = (17194218091/143327232, 
-274748766781/1719926784). Find Pn for n = 1114 in the following format: If Pn = (a/b, c/d) where the 
-fractions are in lowest terms and the denominators are positive, then the answer is 
-(a + b + c + d) mod 1 000 000 007. For n = 7, the answer would have been: 
-806236837. </Description>
+-4). For i greater than 2, Pi is the unique point in H that is different from 
+Pi-1 and such that line PiPi-1 is parallel to line Pi-2X. It can be shown that 
+Pi is well-defined, and that its coordinates are always rational. You are 
+given that P3 = (-19/2, -229/24), P4 = (1267/144, -37/12) and P7 = 
+(17194218091/143327232, 274748766781/1719926784). Find Pn for n = 1114 in the following format: If 
+Pn = (a/b, c/d) where the fractions are in lowest terms and the denominators 
+are positive, then the answer is (a + b + c + d) mod 1 000 000 007. For n = 7, 
+the answer would have been: 806236837. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>423</ProblemID>
@@ -5079,10 +5092,10 @@ circle having the diameter XY. Let Cout be the circle having the diameter WZ. Th
 triplet (a, b, c) is called a necklace triplet if you can place k ≥ 3 distinct 
 circles C1, C2, ..., Ck such that: Ci has no common interior points with any Cj 
 for 1 ≤ i, j ≤ k and i ≠ j, Ci is tangent to both Cin and Cout for 1 ≤ i ≤ k, 
-Ci is tangent to Ci+1 for 1 ≤ i < k, and Ck is tangent to C1. For example, 
-(5, 5, 5) and (4, 3, 21) are necklace triplets, while it can be shown that (2, 
-2, 5) is not. Let T(n) be the number of necklace triplets (a, b, c) such that 
-a, b and c are positive integers, and b ≤ n. For example, T(1) = 9, 
+Ci is tangent to Ci+1 for 1 ≤ i less than k, and Ck is tangent to C1. For 
+example, (5, 5, 5) and (4, 3, 21) are necklace triplets, while it can be shown that 
+(2, 2, 5) is not. Let T(n) be the number of necklace triplets (a, b, c) such 
+that a, b and c are positive integers, and b ≤ n. For example, T(1) = 9, 
 T(20) = 732 and T(3000) = 438106. Find T(1 000 000 000). </Description>
 	</Problem>
 	<Problem>
@@ -5189,16 +5202,17 @@ mod 1307674368000 (= 15!). </Description>
 play a game of chance to determine who will wash the dishes. For this game, 
 they shall use a generator of independent random numbers uniformly distributed 
 between 0 and 1. The game starts with S = 0. The first player, Louise, adds to S 
-different random numbers from the generator until S > 1 and records her last random 
-number 'x'. The second player, Julie, continues adding to S different random 
-numbers from the generator until S > 2 and records her last random number 'y'. The 
-player with the highest number wins and the loser washes the dishes, i.e. if y > 
-x the second player wins. For example, if the first player draws 0.62 and 
-0.44, the first player turn ends since 0.62+0.44 > 1 and x = 0.44. If the second 
-players draws 0.1, 0.27 and 0.91, the second player turn ends since 
-0.62+0.44+0.1+0.27+0.91 > 2 and y = 0.91. Since y > x, the second player wins. Louise thinks about 
-it for a second, and objects: "That's not fair". What is the probability that 
-the second player wins? Give your answer rounded to 10 places behind the 
+different random numbers from the generator until S greater than 1 and records her 
+last random number 'x'. The second player, Julie, continues adding to S 
+different random numbers from the generator until S greater than 2 and records her 
+last random number 'y'. The player with the highest number wins and the loser 
+washes the dishes, i.e. if y greater than x the second player wins. For example, 
+if the first player draws 0.62 and 0.44, the first player turn ends since 
+0.62+0.44 greater than 1 and x = 0.44. If the second players draws 0.1, 0.27 and 
+0.91, the second player turn ends since 0.62+0.44+0.1+0.27+0.91 greater than 2 
+and y = 0.91. Since y greater than x, the second player wins. Louise thinks 
+about it for a second, and objects: "That's not fair". What is the probability 
+that the second player wins? Give your answer rounded to 10 places behind the 
 decimal point in the form 0.abcdefghij </Description>
 	</Problem>
 	<Problem>
@@ -5245,10 +5259,10 @@ number of ways to tile a board of length n as described above. For example, T(1)
 	<Problem>
 		<ProblemID>441</ProblemID>
 		<Description>For an integer M, we define R(M) as the sum of 1/(p·q) for all the integer 
-pairs p and q which satisfy all of these conditions: 1 ≤ p < q ≤ M p + q ≥ M p 
-and q are coprime. We also define S(N) as the sum of R(i) for 2 ≤ i ≤ N. We 
-can verify that S(2) = R(2) = 1/2, S(10) ≈ 6.9147 and S(100) ≈ 58.2962. Find 
-S(107). Give your answer rounded to four decimal places. </Description>
+pairs p and q which satisfy all of these conditions: 1 ≤ p less than q ≤ M p + q 
+≥ M p and q are coprime. We also define S(N) as the sum of R(i) for 2 ≤ i ≤ 
+N. We can verify that S(2) = R(2) = 1/2, S(10) ≈ 6.9147 and S(100) ≈ 58.2962. 
+Find S(107). Give your answer rounded to four decimal places. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>442</ProblemID>
@@ -5261,10 +5275,10 @@ E(1018). </Description>
 	<Problem>
 		<ProblemID>443</ProblemID>
 		<Description>Let g(n) be a sequence defined as follows: g(4) = 13, g(n) = g(n-1) + 
-gcd(n, g(n-1)) for n > 4. The first few values are: n 4 5 6 7 8 9 10 11 12 13 14 
-15 16 17 18 19 20 ... g(n) 13 14 16 17 18 27 28 29 30 31 32 33 34 51 54 55 60 
-... You are given that g(1 000) = 2524 and g(1 000 000) = 2624152. Find 
-g(1015). </Description>
+gcd(n, g(n-1)) for n greater than 4. The first few values are: n 4 5 6 7 8 9 10 
+11 12 13 14 15 16 17 18 19 20 ... g(n) 13 14 16 17 18 27 28 29 30 31 32 33 34 
+51 54 55 60 ... You are given that g(1 000) = 2524 and g(1 000 000) = 
+2624152. Find g(1015). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>444</ProblemID>
@@ -5284,9 +5298,9 @@ currently-held tickets. Assume that each player uses the optimal strategy for ma
 the expected value of his ticket winnings. Let E(p) represent the expected 
 number of players left at the table when the game ends in a game consisting of p 
 players (e.g. E(111) = 5.2912 when rounded to 5 significant digits). Let S1(N) = 
-E(p) Let Sk(N) = Sk-1(p) for k > 1 Find S20(1014) and write the answer in 
-scientific notation rounded to 10 significant digits. Use a lowercase e to separate 
-mantissa and exponent (e.g. S3(100) = 5.983679014e5). </Description>
+E(p) Let Sk(N) = Sk-1(p) for k greater than 1 Find S20(1014) and write the 
+answer in scientific notation rounded to 10 significant digits. Use a lowercase e 
+to separate mantissa and exponent (e.g. S3(100) = 5.983679014e5). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>445</ProblemID>
@@ -5346,14 +5360,14 @@ corresponding value of t such that $\sin(t)$ and $\cos(t)$ are rational numbers.
 $S(R, r) = \sum_{(x,y) \in C(R, r)} |x| + |y|$ be the sum of the absolute values 
 of the x and y coordinates of the points in $C(R, r)$. Let $T(N) = \sum_{R = 
 3}^N \sum_{r=1}^{\lfloor \frac {R - 1} 2 \rfloor} S(R, r)$ be the sum of $S(R, 
-r)$ for R and r positive integers, $R\leq N$ and $2r < R$. You are given: C(3, 
-1) = {(3, 0), (-1, 2), (-1,0), (-1,-2)} C(2500, 1000) = {(2500, 0), (772, 
-2376), (772, -2376), (516, 1792), (516, -1792), (500, 0), (68, 504), (68, -504), 
-(-1356, 1088), (-1356, -1088), (-1500, 1000), (-1500, -1000)} Note: (-625, 0) is 
-not an element of C(2500, 1000) because $\sin(t)$ is not a rational number for 
-the corresponding values of t. S(3, 1) = (|3| + |0|) + (|-1| + |2|) + (|-1| + 
-|0|) + (|-1| + |-2|) = 10 T(3) = 10; T(10) = 524 ;T(100) = 580442; T(103) = 
-583108600. Find T(106). </Description>
+r)$ for R and r positive integers, $R\leq N$ and $2r less than R$. You are 
+given: C(3, 1) = {(3, 0), (-1, 2), (-1,0), (-1,-2)} C(2500, 1000) = {(2500, 0), 
+(772, 2376), (772, -2376), (516, 1792), (516, -1792), (500, 0), (68, 504), (68, 
+-504), (-1356, 1088), (-1356, -1088), (-1500, 1000), (-1500, -1000)} Note: (-625, 
+0) is not an element of C(2500, 1000) because $\sin(t)$ is not a rational 
+number for the corresponding values of t. S(3, 1) = (|3| + |0|) + (|-1| + |2|) + 
+(|-1| + |0|) + (|-1| + |-2|) = 10 T(3) = 10; T(10) = 524 ;T(100) = 580442; 
+T(103) = 583108600. Find T(106). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>451</ProblemID>
@@ -5383,8 +5397,8 @@ It can also be verified that Q(3, 7) = 39590, Q(12, 3) = 309000 and Q(123,
 	<Problem>
 		<ProblemID>454</ProblemID>
 		<Description>In the following equation x, y, and n are positive integers. 1 x + 1 y = 1 
-n For a limit L we define F(L) as the number of solutions which satisfy x < 
-y ≤ L. We can verify that F(15) = 4 and F(1000) = 1069. Find F(1012). </Description>
+n For a limit L we define F(L) as the number of solutions which satisfy x 
+less than y ≤ L. We can verify that F(15) = 4 and F(1000) = 1069. Find F(1012). </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>455</ProblemID>
@@ -5557,10 +5571,10 @@ places in the form 0.abcdefghijklmn. </Description>
 		<ProblemID>470</ProblemID>
 		<Description>Consider a single game of Ramvok: Let t represent the maximum number of 
 turns the game lasts. If t = 0, then the game ends immediately. Otherwise, on 
-each turn i, the player rolls a die. After rolling, if i < t the player can 
-either stop the game and receive a prize equal to the value of the current roll, 
-or discard the roll and try again next turn. If i = t, then the roll cannot 
-be discarded and the prize must be accepted. Before the game begins, t is 
+each turn i, the player rolls a die. After rolling, if i less than t the player 
+can either stop the game and receive a prize equal to the value of the current 
+roll, or discard the roll and try again next turn. If i = t, then the roll 
+cannot be discarded and the prize must be accepted. Before the game begins, t is 
 chosen by the player, who must then pay an up-front cost ct for some constant c. 
 For c = 0, t can be chosen to be infinite (with an up-front cost of 0). Let 
 R(d, c) be the expected profit (i.e. net gain) that the player receives from a 
@@ -5602,7 +5616,7 @@ anyone else already seated, as long as it does not violate rule 1. If there is
 more than one choice satisfying this condition, then the person chooses the 
 leftmost choice. Note that due to rule 1, some seats will surely be left 
 unoccupied, and the maximum number of people that can be seated is less than N (for N 
-> 1). Here are the possible seating arrangements for N = 15: We see that if 
+greater than 1). Here are the possible seating arrangements for N = 15: We see that if 
 the first person chooses correctly, the 15 seats can seat up to 7 people. We 
 can also see that the first person has 9 choices to maximize the number of 
 people that may be seated. Let f(N) be the number of choices the first person has 
@@ -5781,8 +5795,8 @@ using a lowercase e to separate mantissa and exponent, as in the examples above.
 		<ProblemID>484</ProblemID>
 		<Description>The arithmetic derivative is defined by p' = 1 for any prime p (ab)' = a'b 
 + ab' for all integers a, b (Leibniz rule) For example, 20' = 24 Find ∑ 
-gcd(k,k') for 1 < k ≤ 5·1015 Note: gcd(x,y) denotes the greatest common divisor of x 
-and y. </Description>
+gcd(k,k') for 1 less than k ≤ 5·1015 Note: gcd(x,y) denotes the greatest common 
+divisor of x and y. </Description>
 	</Problem>
 	<Problem>
 		<ProblemID>485</ProblemID>
