@@ -34,54 +34,17 @@ import org.xml.sax.SAXException;
 public class DescriptionScraper 
 {
 	private static int NUMBER_OF_PROBLEMS = 0;
+	private static int LINE_WORD_LENGTH = 0;
+	private static final int MAX_NUMBER_OF_CONNECTIONS = 48;
+	
 	
 	private DescriptionScraper(){}
-	
-	private static String connectToUrl(String in) throws IOException
-	{
-		URL theURL = new URL(in);
-		BufferedReader theReader = new BufferedReader(new InputStreamReader(theURL.openStream()));
-		
-		String theData = "";
-		String allData = "";
-		while((theData = theReader.readLine()) != null)
-			allData += theData + "\n";
-		
-		theReader.close();
-		return allData;
-	}
-	
-	private static String parseDescription(String theData) throws IOException
-	{
-		Scanner theReader = new Scanner(theData);
-		String inputLine;
-		String output = "";
-		boolean startFound = false, endFound = false;
-		while((inputLine = theReader.nextLine()) != null)
-		{
-			if(inputLine.equalsIgnoreCase("<div class=\"problem_content\" role=\"problem\">"))
-				startFound = true;
-			
-			if(inputLine.equalsIgnoreCase("</div><br />") && startFound)
-				endFound = true;
-			
-			if(startFound)
-				output += inputLine + "\n";
-			
-			if(endFound)
-				break;
-		}
-		
-		theReader.close();	
-		return output;
-	}
 	
 	public static SortedMap<Integer,String> scrapeAllDescriptions() throws IOException, InterruptedException, ExecutionException
 	{
 		SortedMap<Integer, String> theList = new TreeMap<>();
-		int numThreads = 24;
 		
-		ExecutorService exec = Executors.newFixedThreadPool(numThreads);
+		ExecutorService exec = Executors.newFixedThreadPool(MAX_NUMBER_OF_CONNECTIONS);
 		CompletionService<Scrape> service = new ExecutorCompletionService<>(exec);
 		
 		for(int i = 1; i <= NUMBER_OF_PROBLEMS; i++)
@@ -163,7 +126,100 @@ public class DescriptionScraper
 		return "No Description Found!";
 	}
 	
-	private static int LINE_WORD_LENGTH = 0;
+	public static SortedMap<Integer, String> cleanAllDescriptions(SortedMap<Integer, String> list)
+	{
+		String cleaned = "";
+		SortedMap<Integer, String> theList = list;
+		for(int i = 0; i < theList.size(); i++)
+		{
+			if(theList.get(i) != null)
+			{
+				cleaned = cleanSingleResponse(theList.get(i));
+				
+				theList.replace(i, cleaned);
+			}
+		}
+		
+		return theList;
+	}
+	
+	public static boolean buildDescriptionXML(SortedMap<Integer, String> descriptions) throws FileNotFoundException, UnsupportedEncodingException 
+	{		
+		File xmlFile = new File("src/ProjectEulerRunner/descriptions.xml");
+		PrintWriter theWriter = new PrintWriter(xmlFile, "UTF-8");
+		
+		if(xmlFile.exists())
+			xmlFile.delete();
+		
+		String header = "<ProblemDescriptions>\r\n";
+		String footer = "</ProblemDescriptions>";
+		
+		theWriter.write(header);
+		for(int i = 1; i < descriptions.size(); i++)
+		{
+			theWriter.write("\t<Problem>\r\n");
+			theWriter.write("\t\t<ProblemID>" + i + "</ProblemID>\r\n");
+			theWriter.write("\t\t<Description>" + descriptions.get(i) + "</Description>\r\n");
+			theWriter.write("\t</Problem>\r\n");
+			theWriter.flush();
+		}
+		
+		theWriter.write(footer);
+		theWriter.close();
+		
+		return true;
+	}
+
+	public static void setNumberOfProblems(int n)
+	{
+		NUMBER_OF_PROBLEMS = n;
+	}
+	
+	public static void setLineLength(int n)
+	{
+		LINE_WORD_LENGTH = n;
+	}
+	
+	private static String connectToUrl(String in) throws IOException
+	{
+		URL theURL = new URL(in);
+		BufferedReader theReader = new BufferedReader(new InputStreamReader(theURL.openStream()));
+		
+		String theData = "";
+		String allData = "";
+		while((theData = theReader.readLine()) != null)
+			allData += theData + "\n";
+		
+		theReader.close();
+		return allData;
+	}
+	
+	private static String parseDescription(String theData) throws IOException
+	{
+		Scanner theReader = new Scanner(theData);
+		String inputLine;
+		String output = "";
+		boolean startFound = false, endFound = false;
+		while((inputLine = theReader.nextLine()) != null)
+		{
+			if(inputLine.equalsIgnoreCase("<div class=\"problem_content\" role=\"problem\">"))
+				startFound = true;
+			
+			if(inputLine.equalsIgnoreCase("</div><br />") && startFound)
+				endFound = true;
+			
+			if(startFound)
+				output += inputLine + "\n";
+			
+			if(endFound)
+				break;
+		}
+		
+		theReader.close();	
+		return output;
+	}
+	
+	
 	private static String cleanSingleResponse(String response)
 	{
 		String ret = "";
@@ -198,70 +254,6 @@ public class DescriptionScraper
 		}
 		
 		return des;
-	}
-	
-	public static SortedMap<Integer, String> cleanAllDescriptions(SortedMap<Integer, String> list)
-	{
-		String cleaned = "";
-		SortedMap<Integer, String> theList = list;
-		for(int i = 0; i < theList.size(); i++)
-		{
-			if(theList.get(i) != null)
-			{
-				cleaned = cleanSingleResponse(theList.get(i));
-				
-				theList.replace(i, cleaned);
-			}
-		}
-		
-		return theList;
-	}
-	
-	public static boolean buildDescriptionXML(SortedMap<Integer, String> descriptions) throws FileNotFoundException, UnsupportedEncodingException 
-	{
-		//TO-DO:
-		// If descriptions.xml exists, delete it and recreate the file
-		// Entries should follow the following format:
-		// <ProblemDescriptions>
-		// 		<Problem>
-		//			<ProblemID>i</ProblemID>
-		//			<Description>descriptions.get(i)</Description>
-		//		</Problem>
-		// </ProblemDescription>
-		
-		File xmlFile = new File("src/ProjectEulerRunner/descriptions.xml");
-		PrintWriter theWriter = new PrintWriter(xmlFile, "UTF-8");
-		
-		if(xmlFile.exists())
-			xmlFile.delete();
-		
-		String header = "<ProblemDescriptions>\r\n";
-		String footer = "</ProblemDescriptions>";
-		
-		theWriter.write(header);
-		for(int i = 1; i < descriptions.size(); i++)
-		{
-			theWriter.write("\t<Problem>\r\n");
-			theWriter.write("\t\t<ProblemID>" + i + "</ProblemID>\r\n");
-			theWriter.write("\t\t<Description>" + descriptions.get(i) + "</Description>\r\n");
-			theWriter.write("\t</Problem>\r\n");
-			theWriter.flush();
-		}
-		
-		theWriter.write(footer);
-		theWriter.close();
-		
-		return true;
-	}
-
-	public static void setNumberOfProblems(int n)
-	{
-		NUMBER_OF_PROBLEMS = n;
-	}
-	
-	public static void setLineLength(int n)
-	{
-		LINE_WORD_LENGTH = n;
 	}
 	
 	private static final class URLScrapeTask implements Callable<Scrape>

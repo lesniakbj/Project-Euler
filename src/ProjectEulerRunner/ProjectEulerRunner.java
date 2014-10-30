@@ -25,7 +25,7 @@ public class ProjectEulerRunner
 	private static final boolean CHECK_FOR_DESCRIPTIONS = true;
 	private static final boolean PARSE_ALL_DESCRIPTIONS_TO_FILE = true;
 	
-	private static final boolean TESTS_ENABLED = true;
+	private static final boolean TESTS_ENABLED = false;
 	
 	private static final Scanner scan = new Scanner(in);
 	
@@ -49,6 +49,7 @@ public class ProjectEulerRunner
 	
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IOException, ParserConfigurationException, SAXException, InterruptedException, ExecutionException
 	{
+		out.println(EulerUtils.primeFactors(3960));
 		populateProblemSet();
 		initialize();
 		for(;;)

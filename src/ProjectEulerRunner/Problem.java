@@ -10,7 +10,13 @@ public interface Problem
 	
 	public default String getProblemDescription() throws ParserConfigurationException, SAXException, IOException
 	{	
-		return DescriptionScraper.getProblemDescription(getID());
+		String theDescription = DescriptionScraper.getProblemDescription(getID());
+		
+		theDescription = theDescription.replace("less than", "<");
+		theDescription = theDescription.replace("greater than", ">");
+		theDescription = theDescription.replace("&amp;", "&");
+		
+		return theDescription;
 	}
 	
 	public boolean isCorrect();
