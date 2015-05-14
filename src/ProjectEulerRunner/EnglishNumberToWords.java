@@ -2,7 +2,7 @@ package ProjectEulerRunner;
 
 import java.text.DecimalFormat;
 
-public class EnglishNumberToWords 
+public static class EnglishNumberToWords 
 {
 
   private static final String[] tensNames = {
